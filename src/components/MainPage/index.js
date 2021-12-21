@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import {FaSearch} from "react-icons/fa";
 import {AiOutlineArrowRight} from 'react-icons/ai'
@@ -12,8 +13,8 @@ const MainPage = () => {
                   <a className="brand" href="/">
                     <div className="logo mr-4">
                         <div className="logo-container">
-                            <img src={process.env.PUBLIC_URL + "images/christmas-hat.png"} className="hat" />
-                            <img src={process.env.PUBLIC_URL + "images/zapper.png"}  className="logo" />
+                            <img src={process.env.PUBLIC_URL + "/images/christmas-hat.png"} className="hat" />
+                            <img src={process.env.PUBLIC_URL + "/images/zapper.png"}  className="logo" />
                         </div>
                         <span className="name">Zapper</span>
                     </div>
@@ -36,8 +37,7 @@ const MainPage = () => {
                      </div>
                   </div>
 
-              </nav>
-          
+              </nav>       
             </div>
             <div className="container_section">
                 <div className="container_home">
