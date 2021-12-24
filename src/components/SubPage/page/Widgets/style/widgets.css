@@ -406,3 +406,10 @@
         visibility: visible;
     }
 }
+
+@media screen and (max-width:1200px) {
+    .widgets-container {
+        display:none;
+        visibility:hidden;
+    }
+}
