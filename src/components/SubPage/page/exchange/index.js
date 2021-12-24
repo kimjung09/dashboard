@@ -1,14 +1,13 @@
 import React from 'react';
-import "./style/subpage.css"
 
 
-const Dash = () => {
+const ExChange = (match) => {
     return (
         <div className="wrapper" >
-            Dashboard
+            sdsdsdssdsd
         </div>
     )
 }
 
 
-export default Dash;
+export default ExChange;

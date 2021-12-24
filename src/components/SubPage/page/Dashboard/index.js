@@ -1,14 +1,13 @@
 import React from 'react';
-import "./style/subpage.css"
+import "./style/Dash.css";
 
-
-const Dash = () => {
+const Dashboard = (match) => {
     return (
         <div className="wrapper" >
-            Dashboard
+            sdsdsds
         </div>
     )
 }
 
 
-export default Dash;
+export default Dashboard;

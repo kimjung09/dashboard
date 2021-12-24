@@ -5,12 +5,43 @@
     min-height:100%;
     margin:0 auto;
     display:flex;
+}
 
+.Container > .Body {
+    display:flex;
+    flex: 1 1;
+    flex-direction:column;
+}
+.Container > .Body > .app-header {
+    border-bottom: 1px solid #2c3a43;
+    width:100%;
+    padding:12px 0;
+    display:block;
+
+}
+.Container > .Body > .app-header > .app-header-hidden {
+    display:none;
+}
+.Container > .Body > .app-header > .app-header-hidden > .mobile-header {
+    
 }
 
 
 @media screen and (min-width: 1200px) {
     .Container {
        flex-direction:row;
+    }
+    .Container > .Body > .app-header  {
+        /* display:none; */
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .Container >  .Body > .app-header {
+        border-bottom:none;
+    }
+  .Container > .Body > .app-header > .app-header-hidden {
+        display:inline;
     }
 }

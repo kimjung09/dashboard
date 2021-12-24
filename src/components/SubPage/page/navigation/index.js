@@ -81,7 +81,7 @@ const Navigation = () => {
                        </div>
                        <span>Dashboard</span>
                    </NavLink>
-                   <NavLink className="sidebar_menu_item" to="/dashboard">
+                   <NavLink className="sidebar_menu_item" to="/exchange">
                        <div className="sidebar_menu_item_icon">
                            <div className="flex">
                            <FaExchangeAlt />
@@ -90,7 +90,7 @@ const Navigation = () => {
                        </div>
                        <span>ExChange</span>
                    </NavLink>
-                   <NavLink className="sidebar_menu_item" to="/dashboard">
+                   <NavLink className="sidebar_menu_item" to="/pool">
                        <div className="sidebar_menu_item_icon">
                            <div className="flex">
                            <FaPoll />
@@ -99,7 +99,7 @@ const Navigation = () => {
                        </div>
                        <span>Pool</span>
                    </NavLink>
-                   <NavLink className="sidebar_menu_item" to="/dashboard">
+                   <NavLink className="sidebar_menu_item" to="/save">
                        <div className="sidebar_menu_item_icon">
                            <div className="flex">
                            <FaSave />
@@ -108,7 +108,7 @@ const Navigation = () => {
                        </div>
                        <span>Save</span>
                    </NavLink>
-                   <NavLink className="sidebar_menu_item" to="/dashboard">
+                   <NavLink className="sidebar_menu_item" to="/address">
                        <div className="sidebar_menu_item_icon">
                            <div className="flex">
                            <FaAddressBook />
