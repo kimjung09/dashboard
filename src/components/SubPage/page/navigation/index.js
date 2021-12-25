@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { AiFillSetting } from 'react-icons/ai';
 import { RiArrowUpSFill} from 'react-icons/ri'; 
-import { FaAddressBook, FaExchangeAlt, FaHome, FaMicrophone, FaPoll, FaSave } from 'react-icons/fa';
+import { FaAddressBook, FaAngleDoubleDown, FaBalanceScaleRight, FaExchangeAlt, FaHome, FaMicrophone, FaPoll, FaRegMap, FaSave, FaVials } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import "./style/navi.css"
 
 const Navigation = () => {
+     const [isOpen, setMenu] = useState(false);
+
+     const toggleMenu = () => {
+         setMenu(isOpen => !isOpen);
+     }
+
+ 
     return (
         <>
         <nav className="sidebar_wrapper">
@@ -117,20 +124,51 @@ const Navigation = () => {
                        </div>
                        <span>Address Book</span>
                    </NavLink>
-                   <div className="more">
+                   <div className="more" onClick={() => toggleMenu()}>
                        <div className="icon">
                          <FaMicrophone />
                         </div>
                         <span>More</span>
                    </div>
+
+                   <div className={isOpen ? "show-menu" : "hide-menu"}>
+                       <a href="/farm">
+                           <div className="icon">
+                               <FaRegMap />
+                           </div>
+                           <span>Farm</span>
+                       </a>
+                       <a href="/valuts">
+                       <div className="icon">
+                           <FaVials />
+                       </div>
+                           <span>Valuts</span>
+                       </a>
+                       <a href="/bridge">
+                       <div className="icon">
+                           <FaBalanceScaleRight />
+                       </div>
+                           <span>Farm</span>
+                       </a>
+                       <a href="/revoke">
+                       <div className="icon">
+                           <FaAngleDoubleDown />
+                       </div>
+                           <span>Allowances</span>
+                       </a>
+
+                   </div>
                 </div>
+                    
+
+
                 <div className="flex-max"></div>
-                <a href="" className="sidebar_menu_icon">
+                <NavLink to="settings" className="sidebar_menu_icon">
                     <div className="flex">
                         <AiFillSetting className="icon"/>
                     </div>
                     <span>settings</span>
-                </a>
+                </NavLink>
                  <div className="dropdown">
                      <div className="flex">
                          <img src={process.env.PUBLIC_URL + "/images/ethereum-icon.png"} />

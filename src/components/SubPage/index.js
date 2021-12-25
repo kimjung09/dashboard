@@ -1,10 +1,9 @@
 import React from 'react';
-import { Routes,Route, NavLink, Link } from 'react-router-dom';
+import { Routes,Route } from 'react-router-dom';
 import "./SubPage.css"
-import Navigation from './page/navigation';
-import Widgets from './page/Widgets';
 import ExChange from './page/exchange';
 import Dashboard from './page/Dashboard';
+import Footer from './page/footer';
 
 
 const SubPage = () => {
@@ -12,7 +11,6 @@ const SubPage = () => {
         <>
           {/* <div className="Container">
             <Navigation /> */}
-
             <div className="Body">
               <Routes>
                    <Route exact path="/" element={<Dashboard/>} />
@@ -23,7 +21,6 @@ const SubPage = () => {
                    <Route exact path="/settings" element={<ExChange/>} />
               </Routes>
             </div>
-
           {/* </div> */}
         </>
     )

@@ -3,7 +3,7 @@
   padding:0;
   text-decoration:none;
   scroll-behavior:smooth;
-
+  
 }
 
 html {
@@ -16,6 +16,7 @@ body {
   color:#fff;
   font-family: Avenir Next, Arial, sans-serif;
   line-height: 1.3975;
+  overflow:hidden;
 }
 
 .bg-color  {

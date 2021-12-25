@@ -5,18 +5,21 @@
     min-height:100%;
     margin:0 auto;
     display:flex;
+
 }
 
 .Container > .Body {
     display:flex;
     flex: 1 1;
     flex-direction:column;
+    overflow:hidden;
+    border-right:1px solid #2c3a43;
+
 }
 .Container > .Body > .app-header {
     border-bottom: 1px solid #2c3a43;
     width:100%;
-    padding:12px 0;
-    display:block;
+    display:none;
 
 }
 .Container > .Body > .app-header > .app-header-hidden {
@@ -26,13 +29,43 @@
     
 }
 
+.Container > .Body > .wrapper {
+    border-right:1px solid #2c3a43;
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    position:fixed;
+    height: 100%;
 
-@media screen and (min-width: 1200px) {
+}
+.Container > .Body > .wrapper > .top {
+    width:100%;
+    padding-bottom:32px;
+    flex: 1 1;
+}
+.Container > .Body > .wrapper > .bottom {
+    width:100%;
+    display:block;
+    bottom:0;
+}
+@media screen and (min-width: 1400px) {
+    .Container > .Body > .wrapper {
+        width: calc(1480px - 240px - 350px);
+        position:fixed;
+        height: 100%;
+    }
+    .Container > .Body > .wrapper {
+
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
     .Container {
        flex-direction:row;
     }
     .Container > .Body > .app-header  {
-        /* display:none; */
+        display:block;
     }
 
 }

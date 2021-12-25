@@ -264,6 +264,41 @@
     color:#fff;
 }
 
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu {
+    position:fixed;
+    inset:0px auto auto auto auto;
+    /* transform: translate3d(218px, 479px, 0px); */
+    z-index: 10;
+    background:#141a1e;
+    padding:8px;
+    box-shadow: 0 2px 8px rgba(245,251,255,0.1);
+    list-style:none;
+    width:10rem;
+}
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a {
+      color:#c7d2da;
+      display:flex;
+      padding:4px 0;
+      align-items: center;
+      border-radius:8px;
+      margin-bottom: 8px;
+}
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a > .icon {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+}
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a > span {
+    margin-left: 8px;
+}
+
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .hide-menu {
+    display:none;
+}
+
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu_icon {
     display:flex;
     align-items: center;
@@ -337,5 +372,10 @@
 @media screen and (min-width:1200px) {
     .sidebar_wrapper {
        min-width:240px;
+    }
+
+    .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu{
+      width:12rem;
+
     }
 }

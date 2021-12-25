@@ -3,9 +3,13 @@ import {Routes, Route} from "react-router-dom";
 import './App.css';
 import MainPage from './components/MainPage';
 import SubPage from './components/SubPage';
+import Address from './components/SubPage/page/Address';
 import Dashboard from './components/SubPage/page/Dashboard';
 import ExChange from './components/SubPage/page/exchange';
+import Footer from './components/SubPage/page/footer';
 import Navigation from './components/SubPage/page/navigation';
+import Pool from './components/SubPage/page/Pool';
+import Settings from './components/SubPage/page/settings';
 import Widgets from './components/SubPage/page/Widgets';
 
 const App = () => {
@@ -30,17 +34,23 @@ const App = () => {
                </div>
              </div>
            </div>
+           <div className="wrapper">
+             <div className="top">
            <Routes>
             <Route exact path="/dashboard" element={<Dashboard/>} />
             <Route exact path="/exchange"  element={<ExChange /> } /> 
-            <Route exact path="/pool"  element={<ExChange /> } /> 
-            <Route exact path="/address"  element={<ExChange /> } /> 
-            <Route exact path="/settings"  element={<ExChange /> } /> 
+            <Route exact path="/pool"  element={<Pool /> } /> 
+            <Route exact path="/save"  element={<Pool /> } /> 
+            <Route exact path="/address"  element={<Address /> } /> 
+            <Route exact path="/settings"  element={<Settings /> } /> 
             <Route exact path="/exchange"  element={<ExChange /> } /> 
-
            </Routes>
            </div>
-          
+            <div className="bottom">
+            <Footer /> 
+            </div>
+          </div>
+           </div>
           <Widgets />
 
            </div>
