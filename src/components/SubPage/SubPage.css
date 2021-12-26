@@ -33,10 +33,9 @@
     border-right:1px solid #2c3a43;
     display:flex;
     flex-direction: column;
-    flex: 1 1 auto;
-    position:fixed;
+    flex: 1 1 ;
+    width:100%;
     height: 100%;
-
 }
 .Container > .Body > .wrapper > .top {
     width:100%;
@@ -76,5 +75,14 @@
     }
   .Container > .Body > .app-header > .app-header-hidden {
         display:inline;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .Container > .Body > .wrapper {
+    }
+
+    .Container {
+        flex-direction: row;
     }
 }
