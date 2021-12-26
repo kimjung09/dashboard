@@ -4,6 +4,7 @@ import { RiArrowUpSFill} from 'react-icons/ri';
 import { FaAddressBook, FaAngleDoubleDown, FaBalanceScaleRight, FaExchangeAlt, FaHome, FaMicrophone, FaPoll, FaRegMap, FaSave, FaVials } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import "./style/navi.css"
+import DarkMode from './Dark/DarkMode';
 
 const Navigation = () => {
      const [isOpen, setMenu] = useState(false);
@@ -183,6 +184,7 @@ const Navigation = () => {
                          </div>
                      </div>
                  </div>
+                 <DarkMode />
             </div>
             
             </div>

@@ -3,7 +3,23 @@
   padding:0;
   text-decoration:none;
   scroll-behavior:smooth;
+  color: var(--font-color);
   
+}
+
+
+:root {
+  --font-color:#141a1e;
+
+  --background-color:#fff;
+
+}
+
+[data-theme="dark"] {
+  --font-color:#fff;
+
+  --background-color:#141a1e;
+
 }
 
 html {
@@ -11,12 +27,12 @@ html {
 
 }
 
-body {
-  background: #141a1e;
-  color:#fff;
+body{
+  background: var(--background-color);
+  color:var(--font-color);
   font-family: Avenir Next, Arial, sans-serif;
   line-height: 1.3975;
-  overflow:hidden auto;
+  overflow-y: auto;
 }
 
 .bg-color  {

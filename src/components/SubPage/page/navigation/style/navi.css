@@ -10,8 +10,11 @@
     width:1px;
 }
 
+
+
+
 .sidebar_wrapper > .hidden {
-    background:#141a1e;
+    background:var(--background-color);
     border-right: 1px solid gray;
     display:flex;
     flex-direction: column;
@@ -22,7 +25,7 @@
     position:fixed;
     width: inherit;
     overflow:hidden auto;
-    
+       
 }
 .sidebar_wrapper > .hidden > .brand {
    display:flex;   
