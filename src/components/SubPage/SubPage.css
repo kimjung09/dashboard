@@ -70,19 +70,101 @@
 }
 
 @media screen and (max-width: 600px) {
-    .Container >  .Body > .app-header {
-        border-bottom:none;
-    }
-  .Container > .Body > .app-header > .app-header-hidden {
-        display:inline;
-    }
-}
-
-@media screen and (min-width:600px) {
-    .Container > .Body > .wrapper {
-    }
 
     .Container {
-        flex-direction: row;
+        flex-direction: column;
+        display:flex;
+    }
+    
+    .Container > .Body > .wrapper {
+    }
+    
+    .Container > .Body > .app-header {
+        border-bottom:1px solid #2c3a43;
+        width:100%;
+        padding:12px 0;
+        display:block;
+        
+    }
+
+    .Container > .Body > .app-header > .app-header-hidden {
+         display:inherit;
+         padding-bottom:12px;
+      }
+      
+      .Container > .Body > .app-header > .app-header-hidden > .app_container {
+         justify-content: space-between;
+         display:flex;
+         align-items: center;
+         padding: 0 16px;
+         max-width:1200px;
+         width:100%;
+         flex-grow:1; 
+         box-sizing:border-box;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .app_container > .blockie_left {
+        position:relative;
+        height:44px;
+
+    }
+
+    .Container > .Body > .app-header > .app-header-hidden > .app_container > .blockie_left  > .blockie {
+        width:30px;
+        height:30px;
+        box-shadow: 0 0 0 2px #2c3a43;
+        border-radius: 100%;
+        background-size:cover;
+        background-position: 50%;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .app_container > .blockie_center {
+        position: relative;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .app_container > .blockie_center > img {
+        position: absolute;
+        transform: rotate(150deg);
+        left: -25px;
+        bottom:-12px;
+        width:29px;
+        vertical-align: middle;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .app_container > .blockie_right {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .mobile-header {
+        background:#202a30;
+        padding: 12px 16px;
+        font-size:12px;
+        display:flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .mobile-header  > img {
+        border:1px solid #2c3a43;
+        width:15px;
+        height:15px;
+        border-radius: 100%;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .mobile-header  > p {
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .mobile-header  > .point {
+        background:#fff;
+        width:3px;
+        height:3px;
+        border-radius:3px;
+        margin:0px 8px;
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .mobile-header > .icon {
+        margin-right: 4px;        
+    }
+    .Container > .Body > .app-header > .app-header-hidden > .mobile-header > span {
+        font-size: 10px;
+        line-height: 10px;
     }
 }

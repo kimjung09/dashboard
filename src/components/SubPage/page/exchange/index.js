@@ -42,6 +42,14 @@ const ExChange = (match) => {
                            <span>Fantom</span>
                       </div>
                    </div>
+                   <div className="network_mobile_container">
+                       <div className="network_mobile_container_form">
+                           <div className="network_mobile_container_body">
+                               <img src={process.env.PUBLIC_URL + "/images/ethereum-icon.png"} />
+                               <span>Ethereum</span>
+                           </div>
+                       </div>
+                   </div>
                </div>
            </div>
            <div className="bottom">

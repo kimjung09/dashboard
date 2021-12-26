@@ -359,6 +359,39 @@
     cursor:default;
 }
 
+
+.exchange > .top > .network > .network_mobile_container {
+    display:none;
+    padding-bottom:16px;
+}
+.exchange > .top > .network > .network_mobile_container > .network_mobile_container_form {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    margin:0 auto;
+    max-width:1200px;
+    padding-bottom:16px;
+}
+.exchange > .top > .network > .network_mobile_container > .network_mobile_container_form  > .network_mobile_container_body{ 
+    padding:0px 12px;
+    display:flex;
+    height:50px;
+    width:100%;
+    max-width:210px;
+    background:#202a30;
+    align-items:center;
+    border-radius:8px;
+}
+.exchange > .top > .network > .network_mobile_container > .network_mobile_container_form  > .network_mobile_container_body > img { 
+    width:30px;
+
+ }
+.exchange > .top > .network > .network_mobile_container > .network_mobile_container_form  > .network_mobile_container_body > span {
+     margin-left:8px;
+     flex: 1 1; 
+}
+
+
 /* end */
 
 .exchange > .bottom > .container > .page_card  > .page_section  > .page_section_to {}
@@ -378,5 +411,56 @@
     }
     .exchange > .bottom  {
         padding:0px 32px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .exchange > .top > .title {
+        padding: 32px 32px;
+    }
+    .exchange > .top > .network {
+        display:block;
+        padding: 0px 32px;
+    }
+    .exchange > .top > .network  > .network_container {
+       display:flex;
+    }
+    .exchange > .bottom  {
+        padding:0px 32px;
+    }
+    
+}
+
+@media screen and (max-width:1024px)  {
+    .exchange > .top > .network > .network_container {
+        display:none;
+    }
+    .exchange > .top > .network > .network_mobile_container {
+        display:block;
+    }
+}
+@media screen and (min-width: 600px) {
+   .exchange > .top > .network > .network_mobile_container > .network_mobile_container_form {
+       padding:0px 32px;
+   }
+
+}
+
+@media screen and (max-width: 500px) {
+    .exchange {
+        margin-right: 10px;
+        margin-left:-20px;
+        overflow:hidden auto;
+    }
+
+    .exchange > .bottom {
+        margin-left:-20px;
+        background:none;
+        border:none;
+        box-shadow: none;
+    }
+    .exchange > .bottom > .container > .page_card {
+        box-shadow: none;
     }
 }

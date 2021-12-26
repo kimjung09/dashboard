@@ -137,30 +137,30 @@ const Navigation = () => {
                    </div>
 
                    <div className={isOpen ? "show-menu" : "hide-menu"}>
-                       <a href="/farm">
+                       <NavLink to="/farm" className="link"> 
                            <div className="icon">
                                <FaRegMap />
                            </div>
                            <span>Farm</span>
-                       </a>
-                       <a href="/valuts">
+                       </NavLink>
+                       <NavLink to="/valuts"  className="link">
                        <div className="icon">
                            <FaVials />
                        </div>
                            <span>Valuts</span>
-                       </a>
-                       <a href="/bridge">
-                       <div className="icon">
+                       </NavLink>
+                       <NavLink to="/bridge" className="link">
+                       <div className="icon"  >
                            <FaBalanceScaleRight />
                        </div>
                            <span>Farm</span>
-                       </a>
-                       <a href="/revoke">
+                       </NavLink>
+                       <NavLink to="/revoke"  className="link">
                        <div className="icon">
                            <FaAngleDoubleDown />
                        </div>
                            <span>Allowances</span>
-                       </a>
+                       </NavLink>
 
                    </div>
                 </div>

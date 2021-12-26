@@ -1,7 +1,7 @@
 .dashboard {
     width:100%;
-    min-height: 1500px;
-    padding-bottom: 32px;
+    min-height: 100%;
+    padding-bottom: 392px;
     flex: 1 1;
     overflow-y:hidden;
 }
@@ -348,4 +348,16 @@
 
 @media screen and (min-width:1480px) {
   
+}
+
+@media screen and (max-width: 680px) {
+    .dashboard {
+      padding-bottom: 360px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+      padding-bottom: 200px;
+    }
 }

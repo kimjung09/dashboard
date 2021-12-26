@@ -276,7 +276,7 @@
     list-style:none;
     width:10rem;
 }
-.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a {
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link {
       color:#c7d2da;
       display:flex;
       padding:4px 0;
@@ -284,7 +284,7 @@
       border-radius:8px;
       margin-bottom: 8px;
 }
-.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a > .icon {
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link > .icon {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -292,7 +292,7 @@
     height:30px;
     border-radius:100%;
 }
-.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a > span {
+.sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link > span {
     margin-left: 8px;
 }
 
@@ -473,11 +473,20 @@
         width:fit-content;
         margin-left: 10px;
     }
-    .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a {
+    .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link {
        justify-content: center;
     }
-    .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > a > span {
+    .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link > span {
         display:none;
     };
    
+}
+
+/* mobile 화면  */
+
+@media screen and (max-width:600px) {
+   .sidebar_wrapper > .hidden {
+       display:none;
+       overflow-y: auto;
+   }
 }

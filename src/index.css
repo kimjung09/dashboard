@@ -16,7 +16,7 @@ body {
   color:#fff;
   font-family: Avenir Next, Arial, sans-serif;
   line-height: 1.3975;
-  overflow:hidden;
+  overflow:hidden auto;
 }
 
 .bg-color  {

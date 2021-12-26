@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGasPump } from 'react-icons/fa';
 import {Routes, Route} from "react-router-dom";
 import './App.css';
 import MainPage from './components/MainPage';
@@ -27,10 +28,21 @@ const App = () => {
            <div className="app-header">
              <div className="app-header-hidden">
                <div className="app_container">
-                  123
+                        <div className="blockie_left">
+                          <div className="blockie"></div>
+
+                        </div>
+                        <div className="blockie_center">
+                            <img src={process.env.PUBLIC_URL + "/images/zapper.png"} />
+                        </div>
+                        <div className="blockie_right">right</div>
                </div>
                <div className="mobile-header">
-
+                  <img src={process.env.PUBLIC_URL + "/images/ethereum-icon.png"} />
+                  <p>Ethereum</p>
+                  <div className="point"></div>
+                  <FaGasPump className="icon"/>
+                  <span>51</span>
                </div>
              </div>
            </div>
@@ -41,9 +53,15 @@ const App = () => {
             <Route exact path="/exchange"  element={<ExChange /> } /> 
             <Route exact path="/pool"  element={<Pool /> } /> 
             <Route exact path="/save"  element={<Pool /> } /> 
+            <Route exact path="/farm"  element={<Pool /> } /> 
+            <Route exact path="/valuts"  element={<Pool /> } /> 
+            <Route exact path="/revoke"  element={<Pool /> } /> 
+            <Route exact path="/save"  element={<Pool /> } /> 
+
             <Route exact path="/address"  element={<Address /> } /> 
             <Route exact path="/settings"  element={<Settings /> } /> 
             <Route exact path="/exchange"  element={<ExChange /> } /> 
+
            </Routes>
            </div>
             <div className="bottom">
