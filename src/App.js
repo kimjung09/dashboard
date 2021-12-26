@@ -10,6 +10,7 @@ import ExChange from './components/SubPage/page/exchange';
 import Footer from './components/SubPage/page/footer';
 import Navigation from './components/SubPage/page/navigation';
 import Pool from './components/SubPage/page/Pool';
+import Quests from './components/SubPage/page/Quests';
 import Settings from './components/SubPage/page/settings';
 import Widgets from './components/SubPage/page/Widgets';
 
@@ -57,11 +58,10 @@ const App = () => {
             <Route exact path="/valuts"  element={<Pool /> } /> 
             <Route exact path="/revoke"  element={<Pool /> } /> 
             <Route exact path="/save"  element={<Pool /> } /> 
-
             <Route exact path="/address"  element={<Address /> } /> 
             <Route exact path="/settings"  element={<Settings /> } /> 
             <Route exact path="/exchange"  element={<ExChange /> } /> 
-
+            <Route exact path="/quests" element={<Quests/>} />
            </Routes>
            </div>
             <div className="bottom">
