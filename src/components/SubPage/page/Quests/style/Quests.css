@@ -2,9 +2,8 @@
     width:100%;
     padding-bottom:32px;
     flex: 1 1;
-    max-width:1200px;
-    box-sizing:border-box;
-
+    max-width:890px;
+    overflow-x:hidden;
 
 }
 
@@ -319,3 +318,26 @@
        margin:0 auto;
     }
 }
+
+@media screen and (max-width:1200px) {
+     .Quests-container {
+         overflow:hidden;
+     }
+
+     .Quests-container > .Quest-body > .Quests-Container > .Quest-Card_list  {
+         grid-template-columns: repeat(2,1fr);
+     }
+}
+
+@media screen and (max-width: 800px) {
+    .Quests-container > .Quest-body > .Quests-Container > .Quest-Card_list {
+        grid-template-columns: repeat(1,1fr)
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .Quests-container { 
+    }
+}
+
+

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { FaGasPump } from 'react-icons/fa';
 import {Routes, Route} from "react-router-dom";
 import './App.css';
@@ -15,6 +15,11 @@ import Settings from './components/SubPage/page/settings';
 import Widgets from './components/SubPage/page/Widgets';
 
 const App = () => {
+  const [sidebar, setSidebar] = useState(false);
+
+
+  const showSidebar =  () => setSidebar(!sidebar);
+
   return (
       <>
           <Routes>
@@ -23,34 +28,37 @@ const App = () => {
 
 
          <div className="Container">
-           <Navigation />
-         
+           {/* Navigation */}
+           <Navigation />    
+         {/* BodyComponent */}
          <div className="Body">
            <div className="app-header">
              <div className="app-header-hidden">
                <div className="app_container">
                         <div className="blockie_left">
-                          <div className="blockie"></div>
-
+                          <div className="blockie" onClick={() => setSidebar(!showSidebar)}></div>
                         </div>
                         <div className="blockie_center">
                             <img src={process.env.PUBLIC_URL + "/images/zapper.png"} />
                         </div>
                         <div className="blockie_right">right</div>
-               </div>
-               <div className="mobile-header">
-                  <img src={process.env.PUBLIC_URL + "/images/ethereum-icon.png"} />
-                  <p>Ethereum</p>
-                  <div className="point"></div>
-                  <FaGasPump className="icon"/>
-                  <span>51</span>
-               </div>
+                    </div>
+                    <div className="mobile-header">
+                        <img src={process.env.PUBLIC_URL + "/images/ethereum-icon.png"} />
+                        <p>Ethereum</p>
+                        <div className="point"></div>
+                        <FaGasPump className="icon"/>
+                        <span>51</span>
+                    </div>
              </div>
            </div>
            <div className="wrapper">
              <div className="top">
            <Routes>
             <Route exact path="/dashboard" element={<Dashboard/>} />
+            <Route exact path="/dashboard/nft" element={<Dashboard/>} />
+            <Route exact path="/dashboard/history" element={<Dashboard/>} />
+  
             <Route exact path="/exchange"  element={<ExChange /> } /> 
             <Route exact path="/pool"  element={<Pool /> } /> 
             <Route exact path="/save"  element={<Pool /> } /> 
@@ -69,6 +77,7 @@ const App = () => {
             </div>
           </div>
            </div>
+           {/* Widgets Compoent */}
           <Widgets />
 
            </div>

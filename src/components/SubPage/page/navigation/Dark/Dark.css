@@ -63,3 +63,22 @@ input:checked + .slider {
 .slider.round:before {
     border-radius:50%;
 }
+
+@media screen and (max-width:600px) {
+    .DarkMode {
+        display:block;
+        padding-top:100px;
+    }
+    .DarkMode span {
+        font-size:14px;
+        margin: 0 4px;
+    }
+    
+
+    .DarkMode > .toggle-theme {
+        position:relative;
+        display:inline-block;
+        height:34px;
+        width:60px;
+    }
+}

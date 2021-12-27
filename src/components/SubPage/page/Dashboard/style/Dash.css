@@ -197,14 +197,32 @@
     font-size: 16px;
     font-weight:600;
 }
+.dashboard > .dashboard-header > .dashboard-header_tabs  > .dashboard-header_tabs_item--active > button {
+    color:#fff;
+    background:none;
+    padding:0px 16px;
+    min-width:100px;
+    font-weight: 500;
+    cursor:pointer;
+    border-radius:0;
+    margin-bottom: -32px;
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    font-size: 16px;
+    border:none;
+    font-weight:600;
+}
 
 .dashboard > .dashboard-bottom {
     max-width:1200px;
     width:100%;
     box-sizing:border-box;
     margin:0 auto;
-    padding: 16px 0;
+    padding: 16px ;
     position:relative;
+    border:1px solid #fff;
+
 }
 
 
@@ -242,6 +260,10 @@
     display:flex;
     align-items: center;
 }
+.dashboard > .dashboard-bottom  > .dashboard-bottom_container > .dashbaord-bottom_filter > .dashboard-bottom_box > .dashboard-bottom_control > .dashboard-bottom_control_item--active > button {
+    
+}
+
 .dashboard > .dashboard-bottom  > .dashboard-bottom_container > .dashbaord-bottom_filter > .dashboard-bottom_box > .dashboard-bottom_control > .dashboard-bottom_control_item {
     padding:4px 8px;
     cursor:pointer;

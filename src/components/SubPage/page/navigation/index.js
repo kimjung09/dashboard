@@ -7,12 +7,13 @@ import "./style/navi.css"
 import DarkMode from './Dark/DarkMode';
 
 const Navigation = () => {
-     const [isOpen, setMenu] = useState(false);
+     const [isOpen, setMenu] = useState(true);
 
      const toggleMenu = () => {
          setMenu(isOpen => !isOpen);
      }
 
+ 
  
     return (
         <>
@@ -20,7 +21,9 @@ const Navigation = () => {
             <div className="hidden">
                 <div className="brand">
                    <div className="logo">
+                     <NavLink to="/dashboard" className="img">
                        <img src={process.env.PUBLIC_URL + "/images/zapper.png"} />
+                       </NavLink>
                    </div>
                    <span>Zapper</span>
                 </div>
@@ -166,8 +169,6 @@ const Navigation = () => {
                    </div>
                 </div>
                     
-
-
                 <div className="flex-max"></div>
                 <NavLink to="settings" className="sidebar_menu_icon">
                     <div className="flex">

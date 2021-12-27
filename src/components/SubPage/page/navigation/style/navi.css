@@ -9,7 +9,9 @@
 .sidebar_wrapper::webkit-scrollbar {
     width:1px;
 }
-
+.sidebar_wrapper > .side {
+    display:none;
+}
 
 
 
@@ -36,7 +38,7 @@
 .sidebar_wrapper > .hidden > .brand > .logo {
       position:relative;
 }
-.sidebar_wrapper > .hidden > .brand > .logo > img {
+.sidebar_wrapper > .hidden > .brand > .logo > .img > img {
     width:32px;
     height:32px;
 }
@@ -488,8 +490,25 @@
 /* mobile 화면  */
 
 @media screen and (max-width:600px) {
+    .sidebar_wrapper > .hidden {
+    }
+    .sidebar_wrapper > .hidden > .brand {
+        display:none;
+    }
+    .sidebar_wrapper > .hidden > .connected  {
+        display:block;
+    }
+
    .sidebar_wrapper > .hidden {
-       display:none;
        overflow-y: auto;
+       z-index:1;
+       border-right:0;
+       display:none;
+   }
+   .sidebar_wrapper > .hidden > .connected > .account  > .body > .flex-max {
+    display:none;
+}
+   .sidebar_wrapper > .side {
+       display:block;
    }
 }

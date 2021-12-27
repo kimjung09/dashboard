@@ -4,6 +4,7 @@
   text-decoration:none;
   scroll-behavior:smooth;
   color: var(--font-color);
+
   
 }
 
@@ -32,7 +33,8 @@ body{
   color:var(--font-color);
   font-family: Avenir Next, Arial, sans-serif;
   line-height: 1.3975;
-  overflow-y: auto;
+  overflow-x:hidden;
+  overflow-y:auto;
 }
 
 .bg-color  {
