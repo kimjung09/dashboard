@@ -11,6 +11,7 @@ import Footer from './components/SubPage/page/footer';
 import Navigation from './components/SubPage/page/navigation';
 import Pool from './components/SubPage/page/Pool';
 import Quests from './components/SubPage/page/Quests';
+import Rewords from './components/SubPage/page/Rewords';
 import Settings from './components/SubPage/page/settings';
 import Widgets from './components/SubPage/page/Widgets';
 
@@ -69,7 +70,8 @@ const App = () => {
             <Route exact path="/address"  element={<Address /> } /> 
             <Route exact path="/settings"  element={<Settings /> } /> 
             <Route exact path="/exchange"  element={<ExChange /> } /> 
-            <Route exact path="/quests" element={<Quests/>} />
+            <Route exact path="/quests" element={<Quests/>}/>
+            <Route exact path="/rewards" element={<Rewords/>} />
            </Routes>
            </div>
             <div className="bottom">

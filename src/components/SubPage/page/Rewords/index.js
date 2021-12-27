@@ -1,16 +1,16 @@
 import React from 'react';
-import "./style/Quests.css";
+import "./style/Rewards.css";
 import {FaGasPump} from 'react-icons/fa';
-import QuestBody from './components/Quests';
+import RewardsBody from './components/Rewrads';
 import { Route, Routes } from 'react-router-dom';
 
-const Quests = () => {
+const Rewords = () => {
     return (
     <>
        <div className="Quests-container">   
           <div className="Quest-title">
               <div className="Quest-title-container">
-                  <div className="Quest-header">Quests</div>
+                  <div className="Quest-header">Rewards</div>
               </div>
           </div>
           <div className="Quest-header">
@@ -18,7 +18,7 @@ const Quests = () => {
                   <div className="mb-7">
                       <div className="page-icon"></div>
                       <div className="page-title">
-                          <h3>Quests</h3>
+                          <h3>Rewrads</h3>
                           <a href="https://zapper.crunch.help/season-2-gamification">
                             Learn More
                           </a>
@@ -58,7 +58,7 @@ const Quests = () => {
           </div>
           {/* */}
           <Routes>
-              <Route exact path="/" element={<QuestBody/>} >
+              <Route exact path="/" element={<RewardsBody/>} >
            </Route>
           
           </Routes>
@@ -67,4 +67,4 @@ const Quests = () => {
     )
 }
 
-export default Quests;
+export default Rewords;
