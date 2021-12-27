@@ -1,10 +1,24 @@
 import React,{useState} from 'react';
 import "../style/Rewards.css"
 import rewardList from '../../json/rewards-items.json';
-import {ImHammer} from 'react-icons/im'
+import {ImHammer} from 'react-icons/im';
+import Modal from "./Modal"
 
-const RewardsBody = () => {
+const RewardsBody = (props) => {
    const [item, setItem] = useState(rewardList);
+   
+   const [modalOpen, setModalOpen] = useState(false);
+   const modalClose = (e) => {
+       setModalOpen(!modalOpen);
+   
+       console.log("fsfas");
+       if (e.target === e.currentTarget) {
+           modalClose();
+       }
+   }
+
+
+   
 
     return (
         <div className="rewards">
@@ -31,7 +45,7 @@ const RewardsBody = () => {
                 {rewardList.map(item => (
                   <>
                     <div className="rewards_items_pointer">
-                    <div className="rewards_items_card">
+                    <div className="rewards_items_card" onClick={(props) => modalClose(true)}>
                         <div className="actions">
                             <div className="block"></div>
                             <div className="column">
@@ -42,9 +56,12 @@ const RewardsBody = () => {
                             </div>
                         </div>
                         <div className="media">
-                          <img src={item.images} />
+                          <video width="100" loop preload="none" poster={item.images} type="video/webm">
+                          <source src={item.video} type="video/webm" />
+                        </video>
                         </div>
                         <div className="block"></div>
+                        
                     </div>
                     <div className="rewards_items_body">
                         <div className="flex">
@@ -56,7 +73,7 @@ const RewardsBody = () => {
                 </div>
                     </>
                 ))}
-       
+            {modalOpen && <Modal modalClose={modalClose} props={props}></Modal>}
             </div>
         </div>
              

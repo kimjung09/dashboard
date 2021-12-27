@@ -20,6 +20,8 @@ const App = () => {
 
 
   const showSidebar =  () => setSidebar(!sidebar);
+  
+  console.log(process.env.REACT_APP_MODE);
 
   return (
       <>

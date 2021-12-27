@@ -3,6 +3,7 @@ import "./style/Quests.css";
 import {FaGasPump} from 'react-icons/fa';
 import QuestBody from './components/Quests';
 import { Route, Routes } from 'react-router-dom';
+import CountDownTimer from './components/Timer';
 
 const Quests = () => {
     return (
@@ -51,6 +52,7 @@ const Quests = () => {
                         </p>
                         <h4>6d 13h 55m</h4>
                         <p>January 2, 2022, 8:59 AM GMT+9</p>
+                        <p><CountDownTimer/></p>
                     </div>
                   </div>
 

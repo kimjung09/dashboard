@@ -89,6 +89,15 @@
     overflow: hidden;
     box-sizing:border-box;
     transition:.3s;
+
+
+}
+
+.rewards > .rewards_items > .rewards_items_pointer:hover {
+    border:1.5px solid gray;
+    padding:0;
+    transition:.3s;
+
 }
 
 /*  card */
@@ -116,6 +125,12 @@
     justify-content: center;
     align-items: center;
     grid-gap:8px;
+}
+
+.rewards > .rewards_items > .rewards_items_pointer > .rewards_items_card > .actions  > .absolute {
+    display:block;
+    position:absolute;
+    background:red;
 }
 .rewards > .rewards_items > .rewards_items_pointer > .rewards_items_card > .actions > .column {
     align-items: flex-end;
@@ -155,6 +170,13 @@
 }
 .rewards > .rewards_items > .rewards_items_pointer > .rewards_items_card > .media  > img {
     width:100%;
+}
+.rewards > .rewards_items > .rewards_items_pointer > .rewards_items_card > .media  > video {
+    width:100%;
+    object-fit:contain;
+}
+.rewards > .rewards_items > .rewards_items_pointer > .rewards_items_card > .media  > video > source {
+
 }
 
 .rewards > .rewards_items > .rewards_items_pointer > .rewards_items_card > .block  {}

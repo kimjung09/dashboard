@@ -4,14 +4,18 @@
         "rewrads_title":"GEN 2-1",
         "rewrads_supply": "SUPPLY:2535",
         "rewards_description": "Zaphrodite is the daughter of Zapeus, and therefore heir to great power in the Zapperverse.",
-        "images":"https://storage.googleapis.com/zapper-fi-assets/rewards/preview/6.png"
+        "images":"https://storage.googleapis.com/zapper-fi-assets/rewards/preview/6.png",
+        "video":"/images/13.webm"
+
     },
     {
         "id": 2,
         "rewrads_title":"GEN 2-1",
         "rewrads_supply": "SUPPLY:2535",
         "rewards_description": "Zaphrodite is the daughter of Zapeus, and therefore heir to great power in the Zapperverse.",
-        "images":"https://storage.googleapis.com/zapper-fi-assets/rewards/preview/7.png"
+        "images":"https://storage.googleapis.com/zapper-fi-assets/rewards/preview/7.png",
+        "video":"/images/13.webm"
+
     },
     {
         "id": 3,
