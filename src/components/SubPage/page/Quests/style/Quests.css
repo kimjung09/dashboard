@@ -3,8 +3,8 @@
     padding-bottom:32px;
     flex: 1 1;
     max-width:890px;
+    min-height:1330px;
     overflow-x:hidden;
-    overflow-y: auto;
 }
 
 .Quests-container > .Quest-title {

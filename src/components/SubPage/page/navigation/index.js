@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiFillSetting } from 'react-icons/ai';
 import { RiArrowUpSFill} from 'react-icons/ri'; 
 import { FaAddressBook, FaAngleDoubleDown, FaBalanceScaleRight, FaExchangeAlt, FaHome, FaMicrophone, FaPoll, FaRegMap, FaSave, FaVials } from 'react-icons/fa';
@@ -6,19 +6,39 @@ import { NavLink } from 'react-router-dom';
 import "./style/navi.css"
 import DarkMode from './Dark/DarkMode';
 
-const Navigation = () => {
-     const [isOpen, setMenu] = useState(true);
+
+
+const Navigation = ({props,modalClose}) => {
+     const [isOpen, setMenu] = useState(false);
+     const [button, setButton] = useState(true);
+     const [click, setClick] = useState(false)
+
+        const handleClick = () => setClick(!click);
+        const closeMobileMenu = () => setClick(false);
+
+        const showButton = () => {
+            if (window.innerWidth < 600) {
+                setButton(false);
+            } else {
+                setButton(true)
+            }
+        }
+
+        useEffect(() => {
+            showButton()
+        },[]);
 
      const toggleMenu = () => {
          setMenu(isOpen => !isOpen);
      }
 
- 
+     window.addEventListener('resize', showButton)
+     
  
     return (
         <>
-        <nav className="sidebar_wrapper">
-            <div className="hidden">
+        <nav className="sidebar_wrapper" props={props}>
+            <div className="hidden" >
                 <div className="brand">
                    <div className="logo">
                      <NavLink to="/dashboard" className="img">
@@ -30,7 +50,7 @@ const Navigation = () => {
                 <div className="connected">
                     <div className="account">
                         <div className="body">
-                            <div className="blockie">
+                            <div className="blockie"  >
                                 <div className='edit'>
                                 <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M7.243 18H3v-4.243L14.435 2.322a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L7.243 18zM3 20h18v2H3v-2z"></path></g></svg>
                                 </div>
@@ -177,17 +197,16 @@ const Navigation = () => {
                     <span>settings</span>
                 </NavLink>
                  <div className="dropdown">
-                     <div className="flex">
+                     <div className="flex" onClick={closeMobileMenu}>
                          <img src={process.env.PUBLIC_URL + "/images/ethereum-icon.png"} />
                          <h1>Ethereum</h1>
-                         <div className="hide">
+                         <div className="hide" >
                              <RiArrowUpSFill className="icon"/>
                          </div>
                      </div>
                  </div>
                  <DarkMode />
             </div>
-            
             </div>
         </nav>
         </>

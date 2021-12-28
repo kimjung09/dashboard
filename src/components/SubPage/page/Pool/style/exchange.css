@@ -214,16 +214,81 @@
  .pool > .bottom > .pool_bottom_full > table > tbody > tr {
      display:flex;
      flex: 1 0 auto;
+     border-bottom:1px solid #2c3a43;
      min-width: 130px;
+
  }
  .pool > .bottom > .pool_bottom_full > table > tbody > tr > .no-flex:first-child {
      padding-left: 16px;
-     padding:16px 16px 16px 16px;
-     display:flex;
-     align-items: center;
+
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr > .no-flex {
+     flex:initial;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td:first-child {
+     padding-left:16px;
  }
  .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td {
-     
+    
+
+    padding:16px 0;
+    display:flex;
+    align-items:center;
+    padding-left:16px;
+    
+    flex: 150px auto;
+    min-width:40px;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex {
+     width:100%;
+     display:flex;
+     align-items:center;
+}
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex > .left {
+     margin-right:0;
+     display:flex;
+     position:relative;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex > .left > .tLogo {
+      display:flex;
+      position: relative;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex > .left > .tLogo > .token-group {
+     display:flex;
+     padding-right: 16px;
+     position:relative;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex > .left > .tLogo > .token-group > img {
+     width:30px;
+     height: 30px;
+     background:#141a1e;
+     box-shadow: 0 0 0 2px #2c3a43;
+     border-radius: 100%;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex > .left > .tLogo > .token-group > img:first-child {
+     z-index:1;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex > .left > .tLogo > .token-group > img:nth-child(2){
+     margin-left: -16px;
+ }
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex > .left > .tLogo > img {
+     width:17.5px;
+     height:17.5px;
+     background:#141a1e;
+     box-shadow: 0 0 0 2px 2c3a43;
+     border-radius:100%;
+     position:absolute;
+     top:-7px;
+     right: 7px;
+     z-index: 9;
+ }
+
+ .pool > .bottom > .pool_bottom_full > table > tbody > tr >  td > .flex  > .right > h1{
+   overflow:hidden;
+   text-overflow:ellipsis;
+   max-width:150px;
+   white-space: nowrap;
+   font-size:16px;
  }
 
 @media screen and (min-width:1200px) {

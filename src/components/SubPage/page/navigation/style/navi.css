@@ -490,20 +490,24 @@
 /* mobile 화면  */
 
 @media screen and (max-width:600px) {
-    .sidebar_wrapper > .hidden {
+    .sidebar_wrapper{
+          display:none;
     }
+    .sidebar_wrapper > .hidden {
+        display:flex;
+        
+    } 
     .sidebar_wrapper > .hidden > .brand {
         display:none;
     }
     .sidebar_wrapper > .hidden > .connected  {
-        display:block;
+        display:grid;
     }
 
    .sidebar_wrapper > .hidden {
        overflow-y: auto;
        z-index:1;
        border-right:0;
-       display:none;
    }
    .sidebar_wrapper > .hidden > .connected > .account  > .body > .flex-max {
     display:none;
@@ -511,4 +515,5 @@
    .sidebar_wrapper > .side {
        display:block;
    }
+
 }

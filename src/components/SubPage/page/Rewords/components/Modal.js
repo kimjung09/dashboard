@@ -1,15 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import "../style/Modal.css"
-import {useAsync} from 'react-async-hook';
-import rewardList from '../../json/rewards-items.json';
+// import {useAsync} from 'react-async-hook';
+// import rewardList from '../../json/rewards-items.json';
 
 const Modal = ({modalClose,props,match}) => {
 
+    useEffect(() => {
+       document.body.style.cssText = `
+          width: 100%;
+          overflow-y:hidden;
+          `;
+          return () => {
+              const scrollY = document.body.style.top;
+              document.body.style.cssText = '';
+          }
+    })
+
     return (
         <>
-        
-
-            <div className="modal__container"  props={props}>
+           <div className="modal__container"  props={props}>
             <div className="modal">
                 <div className="modal__card">
                     <div className="modal__header">

@@ -1,9 +1,8 @@
 .dashboard {
     width:100%;
-    min-height: 100%;
+    min-height: 10%;
     padding-bottom: 392px;
     flex: 1 1;
-    overflow-y:hidden;
 }
 .dashboard > .dashboard-title {
     border-bottom: 1px solid #2c3a43;
@@ -24,6 +23,10 @@
     padding: 32px 32px;
      margin:0 auto;
      width:100%;
+}
+.dashboard > .flex-max {
+    margin-left:12px;
+    flex: 1 1;
 }
 
 .dashboard > .dashboard-header > .dashboard-header_top {
