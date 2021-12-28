@@ -8,8 +8,8 @@
   z-index: 1;
   background:rgba(33,38,43,.75);
   opacity: 1;
-  transition: opacity .2s ease-in-out;
   display:block;
+  transition:9.5s;
 }
 
 .modal__container > .modal {

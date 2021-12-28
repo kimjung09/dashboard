@@ -17,7 +17,7 @@
 
 .sidebar_wrapper > .hidden {
     background:var(--background-color);
-    border-right: 1px solid gray;
+    border-right: 1px solid #c7d2da;
     display:flex;
     flex-direction: column;
 
@@ -71,6 +71,187 @@
     font-weight: 500;
     cursor:pointer;
 }
+
+.sidebar_wrapper > .hidden > .menu {
+     overflow:auto;
+     color:#fff;
+     background:#141a1e;
+     box-shadow: 0 2px 8px rgba(245,251,255,.1);
+     display:none;
+     position:absolute;
+     top:150px;
+     z-index:11;
+     left:0;padding: 8px;
+     min-width:200px;
+     z-index:999;
+}
+
+
+.sidebar_wrapper > .hidden > .menu.active  {
+   display:block;
+   position:fixed;
+   left:236px;
+
+   transition:10s;
+
+}
+
+.sidebar_wrapper > .hidden > .menu.active > h1 {
+    color:#c7d2da;
+    margin-top: 12px;
+    margin: 0 16px;
+    font-size:14px;
+    font-weight: 500;
+}
+.sidebar_wrapper > .hidden  > .menu.active > .menu_wallet {
+      cursor:default;
+      display:flex;
+      align-items: center;
+      padding:0;
+      border-radius: 8px;
+      margin:8px;
+     
+}
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet {
+    padding:8px;
+    display:flex;
+    align-items: center;
+    transition:.3s;
+    cursor:pointer;
+    border-radius: 8px;
+    flex-grow:1;
+}
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .image {
+    position:relative;
+    display:flex;
+    align-items: center;
+    margin-right: 12px;
+}
+.sidebar_wrapper > .hidden >.menu.active > .menu_wallet > .wallet > .image > .blockie {
+    width:30px;
+    height: 30px;
+
+    box-shadow: 0 0 0 2px #2c3a43;
+
+    position:relative;
+    border-radius:100%;
+    background-size:cover;
+    background-position: 50%;
+}
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .image  > span {
+    background: #00d897;
+    position:absolute;
+    bottom:2px;
+    right:0;
+    width:8px;
+    height: 8px;
+    border-radius: 8px;
+}
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .address {
+    font-size: 14px;
+    font-weight: 500;
+    max-width:175px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 75px;   
+}
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .address > h1 {
+    font-size:14px;
+}
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .address > p {
+    color:#c7d2da;
+    font-size:11px;
+    font-weight: 600;
+}
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .item_end {
+    margin: 0 8px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis:auto;
+}
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .item_end > .item_button {
+    background:#141a1e;
+    color:#fff;
+    border:1px solid #2c3a43;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .item_end > .item_button > .flex {
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .item_end_link {
+     margin: 0 8px;
+     display:flex;
+     align-items: center;
+     justify-content:flex-end;
+     flex-basis: auto;
+}
+
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_section {
+    border-top:1px solid #2c3a43;
+}
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_section > .menu_section_link {
+    display:flex;
+    align-items: center;
+    margin:8px;
+    padding:8px;
+    cursor:pointer;
+    transition:.3s;
+    border-radius:8px;
+    font-size:13px;
+    font-weight: bold;
+}
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_section > .menu_section_link > .icon {
+    background: #202a30;
+    border-radius:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:30px;
+    height: 30px;
+    margin-right:12px;
+}
+.sidebar_wrapper > .hidden > .menu.active > .menu_section > .menu_section_link > .icon > .flex {
+    display:flex;
+    align-items: center;
+
+    color:#fff;
+    transition:.3s;
+
+}
+
+.sidebar_wrapper > .hidden > .menu.active > .menu_section > .menu_section_link {
+    
+}
+
+.sidebar_wrapper > .hidden > .menu.inactive {
+    z-index:-999;
+}
+
+.sidebar_wrapper > .hidden > .menu.active {
+    opacity:1;
+    visibility: visible;
+}
+
+
 
 .sidebar_wrapper > .hidden > .connected > .account > .body {
     width:100%;

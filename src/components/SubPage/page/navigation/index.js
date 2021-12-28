@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { AiFillSetting } from 'react-icons/ai';
 import { RiArrowUpSFill} from 'react-icons/ri'; 
-import { FaAddressBook, FaAngleDoubleDown, FaBalanceScaleRight, FaExchangeAlt, FaHome, FaMicrophone, FaPoll, FaRegMap, FaSave, FaVials } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { BiExit } from 'react-icons/bi';
+import { HiOutlineSwitchHorizontal} from 'react-icons/hi';
+import { FaAddressBook, FaAngleDoubleDown, FaBalanceScaleRight, FaBook, FaEdit, FaExchangeAlt, FaHome, FaMicrophone, FaPoll, FaRegMap, FaSave, FaVials } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
 import "./style/navi.css"
 import DarkMode from './Dark/DarkMode';
+import { useDetectOutsideClick } from './useDetect';
 
 
 
@@ -34,11 +37,71 @@ const Navigation = ({props,modalClose}) => {
 
      window.addEventListener('resize', showButton)
      
+
+     const dropdownRef = useRef(null);
+     const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
+     const onClick = () => setIsActive(!isActive);
+
+   
+
  
     return (
         <>
         <nav className="sidebar_wrapper" props={props}>
+        
+
             <div className="hidden" >
+            <nav
+               ref={dropdownRef}
+                     className={`menu ${isActive ? "active" : "inactive"}`}
+            >
+                         <h1>Connected</h1>
+                         <div className="menu_wallet">
+                             <div className="wallet">
+                                 <div className="image">
+                                     <div className="blockie"></div>
+                                     <span></span>
+                                 </div>
+                                 <div className="address">
+                                    <h1>0x7ce1...6412</h1>
+                                    <p>Ethereum</p>
+                                 </div>
+                             </div>
+                             <div className="item_end">
+                                 <div className="item_button">
+                                    <div className="flex">
+                                        <FaEdit className="icon" />
+                                    </div>
+                                </div>
+                             </div>
+                             <div className="item_end_link">
+                                 <div className="item_button">
+                                     <div className="flex">
+                                         <FaBook className='icon'/>
+                                     </div>
+                                </div>
+                             </div>
+                             <div className="item_end_link"></div>
+
+                         </div>
+                         <div className="menu_section">
+                             <div className="menu_section_link">
+                                 <div className="icon">
+                                      <HiOutlineSwitchHorizontal  className="flex" />
+                                 </div>
+                                 <p>Switch Wallet Provider</p>
+                             </div>
+                    
+                             <a href="/" className="menu_section_link">
+                                 <div className="icon">
+                                      <BiExit  className="flex" />
+                                 </div>
+                                 <p>Exit</p>
+                             </a>
+                         </div>
+             </nav>
+
+
                 <div className="brand">
                    <div className="logo">
                      <NavLink to="/dashboard" className="img">
@@ -48,7 +111,7 @@ const Navigation = ({props,modalClose}) => {
                    <span>Zapper</span>
                 </div>
                 <div className="connected">
-                    <div className="account">
+                    <div className="account" onClick={onClick}>
                         <div className="body">
                             <div className="blockie"  >
                                 <div className='edit'>
@@ -57,6 +120,8 @@ const Navigation = ({props,modalClose}) => {
                                 <span></span>
                                 <canvas></canvas>
                             </div>
+           
+
                             <div className="flex-max">
                                 <div className="title">
                                  <span>
@@ -79,8 +144,9 @@ const Navigation = ({props,modalClose}) => {
                                 </div>
                             </div>
                         </div>
+                     
                     </div>
-                
+          
                 <div className="gamification">
                     <NavLink className="visible" to="/quests">
                         <button>

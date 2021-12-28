@@ -6,6 +6,8 @@
     margin:0 auto;
     display:flex;
     overflow:hidden;
+    position:relative;
+    z-index: -999;
 }
 
 .Container > .Body {
@@ -13,6 +15,7 @@
     flex: 1 1;
     flex-direction:column;
     border-right:1px solid #2c3a43;
+    z-index: -9999;
 }
 .Container > .Body > .app-header {
     border-bottom: 1px solid #2c3a43;
@@ -40,7 +43,9 @@
     overflow-x:hidden;
     scroll-behavior: unset;
     scroll-behavior:initial;
-    z-index:1;
+ 
+    z-index:9999;
+
 }
 
 
@@ -50,7 +55,6 @@
    flex:1 1;
    z-index:1;
    overflow:auto;  
-   z-index:99999;
 
 }
 .Container > .Body > .wrapper > .top > .hidden-top > .notifier 
@@ -64,7 +68,6 @@
     box-sizing: border-box;
     color:#fff;
     width:320px;
-    z-index:999999;
 
 }
 .Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body {
@@ -73,7 +76,6 @@
      border:2px solid #f1356e;   
      font-size:16px;
      color:#fff;
-    z-index:9999;
      box-shadow: 0 2px 8px rgba(245,251,255,.1);
     background:#000;
      position:relative;
@@ -89,6 +91,7 @@
      display:flex;
      margin-bottom: 0;
      border-radius:8px;
+     z-index:1;
 
 }
 .Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body > .notifer-body_alert {
