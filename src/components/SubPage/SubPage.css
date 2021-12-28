@@ -40,7 +40,7 @@
     overflow-x:hidden;
     scroll-behavior: unset;
     scroll-behavior:initial;
-
+    z-index:1;
 }
 
 
@@ -49,8 +49,92 @@
    padding-bottom:32px;
    flex:1 1;
    z-index:1;
-   overflow:auto;
-   
+   overflow:auto;  
+   z-index:99999;
+
+}
+.Container > .Body > .wrapper > .top > .hidden-top > .notifier 
+{
+
+    right:1em;
+    bottom:1em;
+    position:fixed;
+    padding:4px;
+    -webkit-transform: translateZ(9999px);
+    box-sizing: border-box;
+    color:#fff;
+    width:320px;
+    z-index:999999;
+
+}
+.Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body {
+     animation-fill-mode: forwards;
+     animation-duration: 750ms;
+     border:2px solid #f1356e;   
+     font-size:16px;
+     color:#fff;
+    z-index:9999;
+     box-shadow: 0 2px 8px rgba(245,251,255,.1);
+    background:#000;
+     position:relative;
+     min-height: 64px;
+     box-sizing:border-box;
+     max-height: 800px;
+     justify-content: space-between;
+     overflow:hidden;
+     direction:ltr;
+     padding:12px;
+     margin-top: 16px;
+     align-items:center;
+     display:flex;
+     margin-bottom: 0;
+     border-radius:8px;
+
+}
+.Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body > .notifer-body_alert {
+    flex: 1 1 auto;
+    margin:0;
+    display:flex;
+    align-items: center;
+    font-size:14px;
+}
+.Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body > .notifer-body_alert > .notifer-body_content {
+     display:flex;
+     align-items: center;
+     flex: 1 1;
+     font-size:14px;
+     font-weight: 400;
+}
+.Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body > .notifer-body_alert > .notifer-body_content > .waring {
+    background:rgba(241,53,110,.15);
+    min-width:32px;
+    width:32px;
+    height:32px;
+    border-radius:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:12px;
+}
+.Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body > .notifer-body_alert > .notifer-body_content > h1 {
+    font-size:15px;
+}
+
+
+.Container > .Body > .wrapper > .top > .hidden-top > .notifier > .notifer-body > button {
+   border:none;
+   color:#fff;
+   background:#141a1e;
+   border:1px solid #2c3a43;
+   opacity: 1;
+   width:32px;
+   height: 32px;
+   min-width:32px;
+   outline:none;
+   padding:0;
+   border-radius:100%;
+   align-self:auto;
+
 }
 
 

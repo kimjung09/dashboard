@@ -15,6 +15,8 @@ import Quests from './components/SubPage/page/Quests';
 import Rewords from './components/SubPage/page/Rewords';
 import Settings from './components/SubPage/page/settings';
 import Widgets from './components/SubPage/page/Widgets';
+import {AiFillWarning} from 'react-icons/ai'
+import {GiCancel} from 'react-icons/gi'
 
 const App = (props) => {
   const [sidebar, setSidebar] = useState(false);
@@ -83,12 +85,33 @@ const App = (props) => {
             <Route exact path="/exchange"  element={<ExChange /> } /> 
            </Routes>
 
+          
+                 
            <div className="hidden-top">
                   <Routes>
                     <Route exact path="/quests" element={<Quests/>}/>
                     <Route exact path="/rewards" element={<Rewords/>} />
                   </Routes>
-               </div>
+              
+              <div className="notifier">
+                 <div className="notifer-body">
+                    <div className="notifer-body_alert" role="alert">
+                      <div className="notifer-body_content">
+                        <div className="waring">
+                          <div className="flex">
+                             <AiFillWarning className="icon" />
+                          </div>
+                        </div>
+                        <h1>A signature is required for this action.</h1>
+                      </div>
+                    </div>
+                    <button><GiCancel/></button>
+
+                 </div>
+                </div>  
+             </div>
+
+              
            </div>
            <div className="flex-max"></div>
             
