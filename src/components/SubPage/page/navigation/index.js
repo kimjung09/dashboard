@@ -243,7 +243,7 @@ const Navigation = ({props,modalClose}) => {
                        <div className="icon"  >
                            <FaBalanceScaleRight />
                        </div>
-                           <span>Farm</span>
+                           <span>Bridge</span>
                        </NavLink>
                        <NavLink to="/revoke"  className="link">
                        <div className="icon">

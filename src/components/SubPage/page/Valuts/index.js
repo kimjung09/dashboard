@@ -4,7 +4,7 @@ import poolList from "../json/pool-network.json";
 import poolItem from '../json/pool-items.json';
 import { FaArrowLeft, FaArrowRight, FaSearch } from 'react-icons/fa';
 
-const Pool = (match) => {
+const Valuts = (match) => {
     const [item,setItem] = useState(poolList);
     const [list, setList] = useState(poolItem);
     
@@ -18,23 +18,10 @@ const Pool = (match) => {
                        <div className="title">
                            <div className='box'>
                                <div className="first">
-                                   <h1>Liquidity Pools</h1>
-                                   <p>Add liquidity to earn fees, incentives, voting rights, etc. </p>
+                                   <h1>Vaults</h1>
+                                   <p>Aggregate yield through depositing your assets.</p>
                                </div>
                               <a href="#">Learn More</a>
-                           </div>
-
-                       </div>
-                       <div className="network">
-                           <div className='network_container'>
-                        {poolList.map(item => (
-                             <>
-                            <div className="network_body">
-                               <img src={item.img} />
-                               <h1>{item.title}</h1>
-                           </div>
-                            </>
-                           ))}
                            </div>
                        </div>
                    </div>
@@ -44,7 +31,7 @@ const Pool = (match) => {
                          <div className="container-second-body">
                            <div className="container-second-flex">
                                <div className="second-header">
-                                  <h4>Explore Opportunities</h4>
+                                  <h4>Markets</h4>
                                </div>
                                <div className="second-body">
                                    <div className="second-options">
@@ -153,4 +140,4 @@ const Pool = (match) => {
     )
 }
 
-export default Pool;
+export default Valuts;

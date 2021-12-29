@@ -17,6 +17,7 @@ import Settings from './components/SubPage/page/settings';
 import Widgets from './components/SubPage/page/Widgets';
 import {AiFillWarning} from 'react-icons/ai'
 import {GiCancel} from 'react-icons/gi'
+import Valuts from './components/SubPage/page/Valuts';
 
 const App = (props) => {
   const [sidebar, setSidebar] = useState(false);
@@ -77,7 +78,7 @@ const App = (props) => {
             <Route exact path="/pool"  element={<Pool /> } /> 
             <Route exact path="/save"  element={<Pool /> } /> 
             <Route exact path="/farm"  element={<Pool /> } /> 
-            <Route exact path="/valuts"  element={<Pool /> } /> 
+            <Route exact path="/valuts"  element={<Valuts /> } /> 
             <Route exact path="/revoke"  element={<Allow /> } /> 
             <Route exact path="/save"  element={<Pool /> } /> 
             <Route exact path="/address"  element={<Address /> } /> 
