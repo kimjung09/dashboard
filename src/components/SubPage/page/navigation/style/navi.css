@@ -59,9 +59,9 @@
 .sidebar_wrapper > .hidden > .connected > .account {
     position:relative;
     cursor:default;
-    background:#1a2227;
+    background:var(--background-color);
     color:#fff;
-    border:1px solid #2c3a43;
+    border:1px solid var(--border-color);
 
     display:flex;
     padding: 0 12px;
@@ -74,8 +74,8 @@
 
 .sidebar_wrapper > .hidden > .menu {
      overflow:auto;
-     color:#fff;
-     background:#141a1e;
+     color:var(--text-color);
+     background:var(--background-color);
      box-shadow: 0 2px 8px rgba(245,251,255,.1);
      display:none;
      position:absolute;
@@ -93,14 +93,17 @@
    left:236px;
 
    transition:10s;
+   color:var(--text-color);
+   background:var(--background-color);
 
 }
 
 .sidebar_wrapper > .hidden > .menu.active > h1 {
-    color:#c7d2da;
     margin-top: 12px;
     margin: 0 16px;
     font-size:14px;
+    color:var(--text-color);
+    background:var(--background-color);
     font-weight: 500;
 }
 .sidebar_wrapper > .hidden  > .menu.active > .menu_wallet {
@@ -132,11 +135,13 @@
     height: 30px;
 
     box-shadow: 0 0 0 2px #2c3a43;
+    color:var(--text-color);
 
     position:relative;
     border-radius:100%;
     background-size:cover;
     background-position: 50%;
+    
 }
 .sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .image  > span {
     background: #00d897;
@@ -146,6 +151,7 @@
     width:8px;
     height: 8px;
     border-radius: 8px;
+
 }
 
 .sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .address {
@@ -162,7 +168,7 @@
 }
 
 .sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .wallet > .address > p {
-    color:#c7d2da;
+    color:var(--text-color);
     font-size:11px;
     font-weight: 600;
 }
@@ -175,7 +181,7 @@
 }
 .sidebar_wrapper > .hidden > .menu.active > .menu_wallet > .item_end > .item_button {
     background:#141a1e;
-    color:#fff;
+    color:var(--text-color);
     border:1px solid #2c3a43;
     display:flex;
     align-items:center;
@@ -221,6 +227,8 @@
 
 .sidebar_wrapper > .hidden > .menu.active > .menu_section > .menu_section_link > .icon {
     background: #202a30;
+    color:var(--text-color);
+
     border-radius:100%;
     display:flex;
     align-items:center;
@@ -358,7 +366,7 @@
 }
 .sidebar_wrapper > .hidden > .connected > .gamification > .visible > button {
     color:#c7d2da;
-    background:#202a30;
+    background:var(--background-mid-color);
     min-height: 22px;
     display:flex;
     width:100%;
@@ -397,16 +405,18 @@
    margin-top: 16px;
    width:100%;
    margin-left: 8px;
+
    overflow:hidden;
    
 }
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .sidebar_menu_item {
-
    display:flex;
    padding:4px 0px;
    align-items: center;
    margin-bottom: 8px;
    position:relative;
+   color:var(--text-color);
+
 }
 
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .sidebar_menu_item > .sidebar_menu_item_icon {
@@ -416,6 +426,10 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
+    color:var(--text-color);
+
+
+
 }
 
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .sidebar_menu_item > .sidebar_menu_item_icon > .flex {
@@ -424,16 +438,19 @@
 }
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .sidebar_menu_item >  span {
     font-weight: 500;
+    color:var(--text-color);
     margin-left: 8px;
 }
 
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .more {
-    color:#c7d2da;
+
     display:flex;
     padding: 4px 0;
     align-items: center;
     border-radius:8px;
     margin-bottom: 8px;
+    color:var(--text-color);
+
 
 }
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .more > .icon {
@@ -443,12 +460,14 @@
     width:30px;
     height: 30px;
     border-radius: 100%;
+     color:red;
 
 }
 
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .more  > span {
     margin-left: 8px;
-    color:#fff;
+    color:var(--text-color);
+
 }
 
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu {
@@ -461,6 +480,7 @@
     box-shadow: 0 2px 8px rgba(245,251,255,0.1);
     list-style:none;
     width:10rem;
+
 }
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link {
       color:#c7d2da;
@@ -469,6 +489,7 @@
       align-items: center;
       border-radius:8px;
       margin-bottom: 8px;
+      
 }
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link > .icon {
     display:flex;
@@ -477,9 +498,11 @@
     width:30px;
     height:30px;
     border-radius:100%;
+    
 }
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .show-menu  > .link > span {
     margin-left: 8px;
+    
 }
 
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu > .hide-menu {
@@ -497,6 +520,7 @@
      width:100%;
      margin-left: 8px;
      padding:4px 0;
+
 }
 
 
@@ -510,14 +534,15 @@
 }
 .sidebar_wrapper > .hidden > .connected > .sidebar_menu_icon >  .flex > .icon {
     color:#c7d2da;
+
   
     
 }
 .sidebar_wrapper > .hidden > .connected > .dropdown {
     position:relative;
     cursor:default;
-    border:1px solid #2c3a43;
-    background:#1a2227;
+    border:1px solid var(--border-color);
+    background:var(--background-color);
 
     /* min-width: 207px; */
     width:100%;

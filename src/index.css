@@ -9,15 +9,22 @@
 
 :root {
   --font-color:#141a1e;
-
   --background-color:#fff;
+  --background-mid-color:rgba(120,79,254,0.15);
+  --border-color:#dfe8f9;
+  --text-color:#c7d2da;
 
 }
 
 [data-theme="dark"] {
   --font-color:#fff;
+  --text-color:#000;
 
   --background-color:#141a1e;
+  --background-mid-color:#202a30;
+  --text-color:#fff;
+
+  --border-color:#2c3a43;
 
 }
 
@@ -29,6 +36,7 @@ html {
 body{
   background: var(--background-color);
   color:var(--font-color);
+  border-right:1px solid var(--border-color);
   font-family: Avenir Next, Arial, sans-serif;
   line-height: 1.3975;
   overflow-x:hidden;

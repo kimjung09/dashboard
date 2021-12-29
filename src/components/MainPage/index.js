@@ -31,9 +31,9 @@ const MainPage = () => {
                   </div>
                   <div className="right hidden_mobile">
                      <div className="home">
-                         <a  href="/watchlist">Adress Book</a>
-                         <a  href="/watchlist">Learn</a>
-                         <a  href="/watchlist">Build</a>
+                         <a href="/watchlist">Adress Book</a>
+                         <a href="/">Learn</a>
+                         <a href="/watchlist">Build</a>
                      </div>
                   </div>
 

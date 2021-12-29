@@ -7,16 +7,17 @@
     display:flex;
     overflow:hidden;
     position:relative;
-    z-index: -999;
+    /* z-index 금지 */
 }
 
 .Container > .Body {
     display:flex;
     flex: 1 1;
     flex-direction:column;
-    border-right:1px solid #2c3a43;
     z-index: -9999;
 }
+
+
 .Container > .Body > .app-header {
     border-bottom: 1px solid #2c3a43;
     width:100%;
@@ -31,7 +32,7 @@
 }
 
 .Container > .Body > .wrapper {
-    border-right:1px solid #2c3a43;
+    border-right:1px solid var(--border-color);
     display:flex;
     flex-direction: column;
     flex: 1 1 ;

@@ -40,7 +40,7 @@ const App = (props) => {
           </Routes>
 
 
-         <div className="Container">
+           <div className="Container">
            {/* Navigation */}
            <Navigation onClick={(props) => modalClose(true)}/>    
          {/* BodyComponent */}

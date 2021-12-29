@@ -213,7 +213,7 @@ const Navigation = ({props,modalClose}) => {
                    <NavLink className="sidebar_menu_item" to="/address">
                        <div className="sidebar_menu_item_icon">
                            <div className="flex">
-                           <FaAddressBook />
+                           <FaAddressBook className="icon" color="#fff"/>
 
                            </div>
                        </div>
@@ -221,7 +221,7 @@ const Navigation = ({props,modalClose}) => {
                    </NavLink>
                    <div className="more" onClick={() => toggleMenu()}>
                        <div className="icon">
-                         <FaMicrophone />
+                         <FaMicrophone className="icon" />
                         </div>
                         <span>More</span>
                    </div>
@@ -229,7 +229,7 @@ const Navigation = ({props,modalClose}) => {
                    <div className={isOpen ? "show-menu" : "hide-menu"}>
                        <NavLink to="/farm" className="link"> 
                            <div className="icon">
-                               <FaRegMap />
+                               <FaRegMap  />
                            </div>
                            <span>Farm</span>
                        </NavLink>
