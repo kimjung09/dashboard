@@ -18,6 +18,8 @@ import Widgets from './components/SubPage/page/Widgets';
 import {AiFillWarning} from 'react-icons/ai'
 import {GiCancel} from 'react-icons/gi'
 import Valuts from './components/SubPage/page/Valuts';
+import Search from './components/test';
+import Bridge from './components/SubPage/page/Bridge';
 
 const App = (props) => {
   const [sidebar, setSidebar] = useState(false);
@@ -40,8 +42,7 @@ const App = (props) => {
             <Route exact path="/" element={<MainPage/>} />
           </Routes>
 
-
-           <div className="Container">
+         <div className="Container">
            {/* Navigation */}
            <Navigation onClick={(props) => modalClose(true)}/>    
          {/* BodyComponent */}
@@ -83,15 +84,15 @@ const App = (props) => {
             <Route exact path="/save"  element={<Pool /> } /> 
             <Route exact path="/address"  element={<Address /> } /> 
             <Route exact path="/settings"  element={<Settings /> } /> 
-            <Route exact path="/exchange"  element={<ExChange /> } /> 
+            <Route exact path="/bridge"  element={<Bridge /> } /> 
             <Route exact path="/quests" element={<Quests/>}/>
-              <Route exact path="/rewards" element={<Rewords/>} />
+            <Route exact path="/rewards" element={<Rewords/>} />
+            <Route exact path="/search" element={<Search/>} />
+
            </Routes>
        
            <div className="hidden-top">
-                  <Routes>
-     
-                  </Routes>
+                  <Routes></Routes>
               
               <div className="notifier">
                  <div className="notifer-body">
@@ -124,6 +125,8 @@ const App = (props) => {
            {/* Widgets Compoent */}
           <Widgets />
 
+          
+ 
            </div>
       </>
   );

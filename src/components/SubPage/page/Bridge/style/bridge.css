@@ -1,0 +1,261 @@
+.Bridge {
+    display:flex;
+    flex-direction: column;
+}
+
+.Bridge > .Bridge-title {
+    padding-bottom:32px;
+}
+.Bridge > .Bridge-title > .Bridge-title-body {
+    width:100%;
+    max-width:1200px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+.Bridge > .Bridge-title > .Bridge-title-body > .title {
+    padding-bottom:12px;
+}
+.Bridge > .Bridge-title > .Bridge-title-body > .title > h1 {
+    font-size:24px;
+    font-weight: 500;
+}
+.Bridge > .Bridge-title > .Bridge-title-body > .title > p {
+    color:#fff;
+    margin: 1em 0;
+    margin-bottom:0;
+    font-size:16px;
+
+}
+
+.Bridge > .Bridge-title > .Bridge-title-body > .subtitle > a {
+    text-decoration:underline;
+    transition:.3s;
+    color:inhreit;
+}
+
+.Bridge > .bottom {
+    padding-bottom:32px;
+    background:none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:1px;
+    width:100%;
+}
+.Bridge > .bottom::before{
+    content:"";
+    background-position:bottom;
+    background-repeat: repeat-x;
+    background-color:#2c3a43;
+    height:1px;
+    flex: 1 1 auto;
+}
+.Bridge > .bottom::after {
+    content:"";
+    background-position:bottom;
+    background-repeat: repeat-x;
+    background-color:#2c3a43;
+    height:1px;
+    flex: 1 1 auto;
+}
+
+.Bridge > .Bridge-container {
+     width:100%;
+     margin: 0 auto;
+     box-sizing:border-box;
+     max-width:1200px;
+}
+.Bridge > .Bridge-container > .bridge {
+    width:100%;
+    max-width:475px;
+    margin: 0 auto 32px;
+    box-shadow:  0 2px 8px rgba(245,251,255,.1);
+    border-radius:8px;
+    font-size:14px;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section {
+    border-bottom: 1px solid #2c3a43;
+    padding:16px;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container {
+    border:1px solid #2c3a43;
+    border-radius:8px;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-title:first-child {
+    margin-top: 12px;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-title {
+    display:flex;
+    align-items: center;
+    padding: 0px 12px;
+    margin-bottom:4px;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-title > h1 {
+    color:#c7d2da;
+    flex: 1 1;
+    display:flex;
+    font-size:14px;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-form {
+    border-bottom:1px solid #2c3a43;
+    display:flex;
+    align-items: center;
+    padding:0 12px;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-form > .dropdown_network {
+    position:relative;
+    cursor:default;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-form > .dropdown_network > .header {
+    height:40px;
+    margin-bottom: 8px;
+    border:1px solid #2c3a43;
+    background:#1a2227;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    transition:.3s;
+    border-radius:8px;
+    font-weight: 500;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-form > .dropdown_network > .header > .header_title {
+    display:flex;
+    align-items: center;
+    flex: 1 1;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-first-form > .dropdown_network > .header > .header_title > img {
+    box-shadow: 0 0 0 2px #2c3a43;
+    width:25px;
+    border-radius:100%;
+    margin: 2.5px 12px 2.5px 2.5px;
+    user-select: none;
+    margin-right: 8px;
+
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-title {
+   display:flex;
+   align-items: center;
+   padding: 0 12px;
+   margin-top: 8px;
+   padding-bottom:4px;
+   margin-bottom: 8px;
+   font-size:14px;
+
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-title > h1 {
+    color:#c7d2da;
+    flex: 1 1;
+    font-size:14px;
+
+    display:flex;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-title > p {
+    font-size:14px;
+    color: #c7d2da;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form {
+    display:flex;
+    align-items: center;
+    padding: 0 12px;
+    margin-bottom:16px;
+    margin-top: 4px;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .container {
+     display:inline-flex;
+     height:50px;
+     transition:.3s;
+     cursor:pointer;
+     border-radius:8px;
+     align-items: center;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .container > img {
+    box-shadow: 0 0 0 2px #2c3a43;
+    margin-right: 12px;
+    border-radius: 100%;
+    width:36px;
+    height: 36px;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .container > .form  {
+    display:inline-flex;
+    align-items:center;
+    justify-content: flex-start;
+  
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .container > .form > h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .max {
+     transition:.3s;
+     cursor:pointer;
+     border-radius: 8px;
+     align-items: center;
+
+     background:rgba(120,79,254,.15);
+     font-size:14px;
+     text-transform: uppercase;
+     font-weight: 500;
+     color:#784ffe;
+     padding:8px;
+     display:flex;
+     margin: 0 12px;
+     position:relative;
+     right:90px;
+}
+
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .input {
+     text-align:right;
+     position:relative;
+    width:405px;
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .input > input {
+    width:100%;
+    font-size:30px;
+    max-width:232px;
+    font-weight: 500;
+    box-sizing: border-box;
+    height: auto;
+    padding: 0;
+    text-align: right;
+    background:transparent;
+    border:none;
+    color:#fff;
+    margin:0;
+    outline:none;
+
+}
+.Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .input > input:not(:focus) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+    /* end */
+.Bridge > .Bridge-container > .bridge > .bridge-footer {
+    border-bottom: 0;
+}
+
+@media screen and (min-width:1200px) {
+   .Bridge > .Bridge-title > .Bridge-title-body {
+       padding:32px 32px 0px 32px;
+
+   }
+   .Bridge > .Bridge-container {
+       padding:0px 32px;
+   }
+}

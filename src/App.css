@@ -3,6 +3,7 @@
     height:100%;
     margin:0 auto;
     z-index:9999;
+    position:relative;
 }
 
 .container > .container_home {
