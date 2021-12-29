@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "img": "https://zapper.fi/images/networks/ethereum-icon.png",
+        "title": "Ethereum"
+    },
+    {
+        "id":2,
+        "img" : "https://zapper.fi/images/networks/avalanche-icon.png",
+        "title": "Avalanche"
+    },
+    {
+        "id":3,
+        "img":"https://zapper.fi/images/networks/binance-smart-chain-icon.png",
+        "title": "BSC"
+    },
+    {
+        "id":4,
+        "img": "https://zapper.fi/images/networks/fantom-icon.png",
+        "title": "Fantom"
+    },
+    {
+        "id":5,
+        "img":"https://zapper.fi/images/networks/polygon-icon.png",
+        "title": "Polygon"
+    }
+]

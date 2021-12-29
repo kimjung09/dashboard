@@ -1,138 +1,146 @@
 import React, {useState} from "react";
-import "./style/exchange.css"
-import "../exchange/style/Exchange.css";
-import poolItem from '../json/pool-list.json';
-import poolList from "../json/pool-items.json";
+import "./style/pool.css"
+import poolList from "../json/pool-network.json";
+import { FaArrowLeft, FaArrowRight, FaSearch } from 'react-icons/fa';
 
 const Pool = (match) => {
     const [item,setItem] = useState(poolList);
-    const [list,setList] = useState(poolItem);
     
 
     return (
         <div className="pool">
-            <div className="top">
-               <div className="title">
-                   <div className="first">
-                       <h1>Pool</h1>
-                       <p>Swap into more than 2000 tokens, using the best quotes from over 20 sources.</p>
-                   </div>
-                   <div className="second">
-                       <a href="https://learn.zapper.fi/articles/what-is-a-decentralized-exchange">
-                             Learn More
-                       </a>
-                   </div>
-               </div>
-               <div className="network">
-                   <div className="network_container">
-                      <div className="network_form network_form--active">
-                          <img src={process.env.PUBLIC_URL + "/images/ethereum-icon.png"}></img>
-                          <span>Ethereum</span>
-
-                      </div>
-                      <div className="network_form">
-                          <img src={process.env.PUBLIC_URL + "/images/avalanche-icon.png"}></img>
-                          <span>Avalanche</span>
-                      
-                      </div>
-                      <div className="network_form">
-                          <img src={process.env.PUBLIC_URL + "/images/binance-smart-chain-icon.png"}></img>
-                          <span>BSC</span>
-
-                      </div>
-                      <div className="network_form">
-                      <img src={process.env.PUBLIC_URL + "/images/fantom-icon.png"}></img>
-                           <span>Fantom</span>
-                      </div>
-                   </div>
-               </div>
-           </div>
-           <div className="bottom">
-               <div className="pool_bottom_full">
-                   <div className="pool_bottom_full_container">
-                       <div className="pool_bottom_full_container_box">
-                           <div className="pool_bottom_header">
-                               <h4>Explore Opportunities</h4>
+           <div className="pool-contianer-top"></div>
+            <div className="pool-container-bottom">
+               <div className="container-first">
+                   <div className="container-first-body">
+                       <div className="title">
+                           <div className='box'>
+                               <div className="first">
+                                   <h1>Liquidity Pools</h1>
+                                   <p>Add liquidity to earn fees, incentives, voting rights, etc. </p>
+                               </div>
+                              <a href="#">Learn More</a>
                            </div>
-                           <div className="pool_bottom_table">
-                              <div className="pool_bottom_table_options">
-                                  <div className="pool_bottom_table_filter">
-                                    <div className="pool_bottom_table_filter_search">
-                                        <div className="table_container">
-                                             <div className="table_container_center">
-                                                   <input type="text" placeholder='Filter by token,protocol'/>
-                                             </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div className="pool_bottom_table_right">
 
-                                  </div>
-                              </div>
-                              <table role="table">
-                                 
-                              </table>
+                       </div>
+                       <div className="network">
+                           <div className='network_container'>
+                        {poolList.map(item => (
+                             <>
+                            <div className="network_body">
+                               <img src={item.img} />
+                               <h1>{item.title}</h1>
+                           </div>
+                            </>
+                           ))}
                            </div>
                        </div>
                    </div>
-                       <table>
-                   {poolList.map(item => (
-                       <thead role="row">
-                           <tr>
-                               <th className="no-flex">#</th>
-                               <th colespan="1">{item.title}</th>
-                               <th colespan="1">{item.Liquidity}</th>
-                               <th colespan="1">{item.Fee}</th>
-                               <th colespan="1"></th>
-                           </tr>
-                       </thead>
-                   ))}
-
-                   {poolItem.map(list => (   
-                       <tbody role="rowgroup">
-                           <tr role="row">
-                               <td className='no-flex'>{list.id}</td>
-                               <td role="cell">
-                                   <div className="flex">
-                                       <div className="left">
-                                           <div className="tLogo">
-                                               <div className="token-group">
-                                                   <img src="https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x6b175474e89094c44da98b954eedeac495271d0f.png"/>
-                                                   <img src="https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png"/>
+               </div>
+               <div className="container-second">
+                     <div className="container-second-full">
+                         <div className="container-second-body">
+                           <div className="container-second-flex">
+                               <div className="second-header">
+                                  <h4>Explore Opportunities</h4>
+                               </div>
+                               <div className="second-body">
+                                   <div className="second-options">
+                                       <div className="filter">
+                                           <div className="filter-search">
+                                               <div className="container">
+                                                   <FaSearch className="icon" />
+                                                   <div className="box">
+                                                       <div className="for">
+                                                         <h1>Filter by token, protocol</h1>
+                                                          <div className="css">
+                                                              <input type="text" autocomplete="off" 
+                                                               autocorrect="off"
+                                                               spellcheck="false"
+                                                               tabindex="0"
+                                                               aria-autocomplete="list"
+                                                               placeholder='Filter by token, protocol'
+                                                              />
+                                                          </div>
+                                                        </div>
+                                                   </div>
                                                </div>
-                                               <img src="https://storage.googleapis.com/zapper-fi-assets/apps/curve.png" />
                                            </div>
                                        </div>
                                        <div className="right">
-                                           <h1>3Pool Curve</h1>
-                                           <p>Curve</p>
+                                           <div className="pagenation">
+                                               <button className="button button-text button-disabled" disabled="">
+                                                   <FaArrowLeft className="icon--active" />
+                                               </button>
+                                               <div className="pagenation_page">Page 1 of 133</div>
+                                               <button className="button button-text">
+                                                   <FaArrowRight className="icon" />
+                                               </button>
+                                           </div>
                                        </div>
                                    </div>
-                               </td>
-                               <td role="cell">
-                                   <div className="flex">
-                                  <h1 className="doller">{list.doller}</h1>
-                                  </div>
-                               </td>
-                               <td role="cell">
-                                 <h1>{list.percent}</h1>
-                                 <p>{list.percent}</p>
-                               </td>
-                               <td role="cell">
-                                   <div className="group">
-                                      <button>
-                                          Invest
-                                      </button>
-                                    </div>
-                               </td>
-                           </tr>
-                       
-                       </tbody>
-                    ))}
-                    </table>
-
-                </div>
-           </div>
+                                   <table cellSpacing="0">
+                                       <thead>
+                                           <tr role="row">
+                                               <th className="no-flex">#</th>
+                                               <th class="undefined" colspan="1" role="columnheader">
+                                                   <div className="flex">
+                                                   Available Pools
+                                                   </div>
+                                               </th>
+                                               <th class="undefined" colspan="1" role="columnheader">
+                                                   <div className="flex">
+                                                    Liquidity
+                                                   </div>
+                                               </th>
+                                               <th class="undefined" colspan="1" role="columnheader">
+                                                   <div className="flex">
+                                                    Fee APR
+                                                   </div>
+                                               </th>
+                                           </tr>
+                                       </thead>
+                                       <tbody role="rowgroup">
+                                            <tr>
+                                              <td className="no-flex">1</td>
+                                              <td className="box" data-header="Aviailble Pools">
+                                                  <div className="flex">
+                                                      <div className="image">
+                                                          <div className="group">
+                                                              <img src="https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x6b175474e89094c44da98b954eedeac495271d0f.png"/>
+                                                              <img src="https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.png" />
+                                                          </div>
+                                                          <img src="https://storage.googleapis.com/zapper-fi-assets/apps/curve.png"/>
+                                                      </div>
+                                                      <div className="title">
+                                                          <h1>3Pool Curve</h1>
+                                                          <p>Curve</p>
+                                                      </div>
+                                                  </div>
+                                              </td>
+                                              <td data-header="Aviailble Pools">
+                                                 <div>$4,990,994,235</div>
+                                              </td>
+                                              <td className="box" data-header="Aviailble Pools">
+                                                  <h1>0.07% (1y)</h1>
+                                                  <p>0.00% (1w)</p>
+                                              </td>
+                                              <td className="invest" data-header="Aviailble Pools">
+                                                <div className="table_group">
+                                                    <button>
+                                                    Invest
+                                                    </button>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                       </tbody>
+                                   </table>
+                               </div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+            </div>
         </div>
     )
 }

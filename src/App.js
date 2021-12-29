@@ -83,14 +83,13 @@ const App = (props) => {
             <Route exact path="/address"  element={<Address /> } /> 
             <Route exact path="/settings"  element={<Settings /> } /> 
             <Route exact path="/exchange"  element={<ExChange /> } /> 
+            <Route exact path="/quests" element={<Quests/>}/>
+              <Route exact path="/rewards" element={<Rewords/>} />
            </Routes>
-
-          
-                 
+       
            <div className="hidden-top">
                   <Routes>
-                    <Route exact path="/quests" element={<Quests/>}/>
-                    <Route exact path="/rewards" element={<Rewords/>} />
+     
                   </Routes>
               
               <div className="notifier">
