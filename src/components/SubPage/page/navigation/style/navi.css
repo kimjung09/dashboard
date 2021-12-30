@@ -29,20 +29,20 @@
     overflow:hidden auto;
        
 }
-.sidebar_wrapper > .hidden > .brand {
+.sidebar_wrapper > .hidden > .brand > .img {
    display:flex;   
    align-items: center;
    cursor:pointer;
    margin-bottom:32px;
 }
-.sidebar_wrapper > .hidden > .brand > .logo {
+.sidebar_wrapper > .hidden > .brand > .img > .logo {
       position:relative;
 }
-.sidebar_wrapper > .hidden > .brand > .logo > .img > img {
+.sidebar_wrapper > .hidden > .brand > .img >.logo > img {
     width:32px;
     height:32px;
 }
-.sidebar_wrapper > .hidden > .brand > span {
+.sidebar_wrapper > .hidden > .brand > .img > span {
     margin-left: 12px;
     font-size: 20px;
     font-weight: 600;
@@ -602,10 +602,10 @@
         padding:16px 8px;
     }
 
-    .sidebar_wrapper > .hidden > .brand {
+    .sidebar_wrapper > .hidden > .brand > .img {
          justify-content: center;
     }
-    .sidebar_wrapper > .hidden > .brand > span {
+    .sidebar_wrapper > .hidden > .brand > .img  > span {
         display:none;
     }
 

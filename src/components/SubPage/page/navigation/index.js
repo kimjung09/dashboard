@@ -99,16 +99,16 @@ const Navigation = ({props,modalClose}) => {
                                  <p>Exit</p>
                              </a>
                          </div>
-             </nav>
+                 </nav>
 
 
                 <div className="brand">
+                    <NavLink to="/dashboard" className="img">
                    <div className="logo">
-                     <NavLink to="/dashboard" className="img">
                        <img src={process.env.PUBLIC_URL + "/images/zapper.png"} />
-                       </NavLink>
                    </div>
                    <span>Zapper</span>
+                       </NavLink>
                 </div>
                 <div className="connected">
                     <div className="account" onClick={onClick}>

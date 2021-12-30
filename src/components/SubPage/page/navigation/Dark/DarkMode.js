@@ -38,6 +38,7 @@ const DarkMode = () => {
        <div className="DarkMode">
             <span>☀️</span> 
             <label className="toggle-theme" htmlFor='checkbox'>
+        
                <input 
                   type="checkbox"
                   id="checkbox"
