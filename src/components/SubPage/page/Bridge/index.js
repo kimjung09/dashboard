@@ -64,11 +64,70 @@ const Bridge = () => {
                                       
                                   </div>
                               </div>
-
+                          </div>
+                          <div className="bridge-middle">
+                              <div className="bridge-middle-row">
+                                  <p>To</p>
+                              </div>
+                          </div>
+                          <div className="bridge-network">
+                              <div className="bridge-first-title-row">
+                                  <p>Network</p>
+                              </div>
+                          
+                              <div className="bridge-first-box-row">
+                                  <div className="network_header">
+                                      <div className="network_header_title">
+                                          <img src="https://zapper.fi/images/networks/polygon-icon.png" />
+                                          Polygon
+                                      </div>
+                                  </div>
+                              </div>
+                              <div className="bridge-second-card-row">
+                                  <p>Token</p>
+                              </div>
+                              <div className="bridge-second-invest-row">
+                                  <div className="second-container">
+                                          <h1>Select Token</h1>
+                                          <div className="flex"></div>
+                                  </div>
+                                  <div className='flex'></div>
+                              </div>
+                          </div>
+                          <div className="bridge-invest">
+                              <div className="invest-content">
+                                  <h1>Transaction Settings</h1>
+                              </div>
+                              <div className="invest-settings">
+                                  <div className="settings_left">
+                                      <a href="https://learn.zapper.fi/articles/what-is-slippage">
+                                          Slipage Tolerance
+                                      </a>
+                                  </div>
+                                  <div className="settings_right">
+                                      <p>2.00%</p>
+                                  </div>
+                                  <div className="settings_left">
+                                      <a href="https://learn.zapper.fi/articles/what-is-slippage">
+                                          Allowances
+                                      </a>
+                                  </div>
+                                  <div className="settings_right">
+                                      <p>Exact Amount</p>
+                                      <div className="extact">
+                                          <div className="switch-bg">
+                                              <div className="switch-handle"></div>
+                                              <input type="checkbox" role="switch" aria-checked="true"/>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
                       </div>
                       <div className="bridge-footer">
-
+                          <button className="button  button--disabled" disabled>
+                          Confirm
+                          </button>
                       </div>
                   </div>
                </div>
