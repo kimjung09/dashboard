@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { FaArrowDown } from 'react-icons/fa';
 import {RiArrowUpDownFill} from 'react-icons/ri'
+import { useDetectOutsideClick } from '../navigation/useDetect';
+import Modal from './form/Modal';
 import "./style/Exchange.css";
 
 
 
 const ExChange = (match) => {
+    const dropdownRef = useRef(null);
+    const [modalVisible, setModalVisible] = useState(false);
+
+    const openModal = () => {
+        setModalVisible(true);
+    }
+
+    const closeModal = () => {
+        setModalVisible(false);
+    }
+
+
     return (
         <div className="exchange">
            <div className="top">
@@ -91,11 +105,23 @@ const ExChange = (match) => {
                                <div className="page_section_card_row">
                                   To
                                 </div>
-                                <div className="page_section_card_row">
-                                   <div className="page_section_card_row_container">
-                                       <div className="page_section_card_row_token">
+                                <div className="page_section_card_row"
+                                    >
+                                   <div className="page_section_card_row_container ">
+                                       <div className="page_section_card_row_token"
+                                        ref={dropdownRef}
+                                        onClick={openModal}
+                                       >
                                            <h1>Select Token</h1>
                                        </div>
+                                       {
+                                           modalVisible && <Modal 
+                                           visible={modalVisible}
+                                           closeable={true}
+                                           maskClosable={true}
+                                           onClose={closeModal}
+                                            />
+                                       }
                                    </div>
                                    <div className="flex--1 right">
 

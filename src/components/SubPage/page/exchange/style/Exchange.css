@@ -280,14 +280,26 @@
 .exchange > .bottom > .container > .page_card  > .page_section > .page_section_card > .page_section_card_row:last-child > .page_section_card_row_container > .page_section_card_row_token {
     justify-content: flex-start;
     font-size:20px;
+    padding: 10px 0px;
     font-weight: 500;
+}
+.exchange > .bottom > .container > .page_card  > .page_section > .page_section_card > .page_section_card_row:last-child > .page_section_card_row_container > .page_section_card_row_token:hover {
+    transition:1.5s;
+    background:#c7d2da;
+    border-radius:10px;
+    padding:10px 0px;
 }
 .exchange > .bottom > .container > .page_card  > .page_section > .page_section_card > .page_section_card_row:last-child > .page_section_card_row_container > .page_section_card_row_token > h1 {
     margin-right: 4px;
     font-size:20px;
 
 }
+/* pagesection */
+.exchange > .bottom > .container > .page_card  > .page_section > .page_section_card > .page_section_card_row:last-child > .page_section_card_row_container > .page_section{display:block;}
 
+.exchange > .bottom > .container > .page_card  > .page_section > .page_section_card > .page_section_card_row:last-child > .page_section_card_row_container > .page_section.deactive {display:block;}
+
+/* end */
 .exchange > .bottom > .container > .page_card > .page_section > .page_section_invest {
    border:1px solid #2c3a43;
    border-radius:8px;

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0xcae72a7a0fd9046cf6b165ca54c9e3a3872109e0.png",
+        "title": "$ANRX"
+    },
+    {
+        "id": 2,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$BASED"
+    },
+    {
+        "id": 3,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x4af698b479d0098229dc715655c667ceb6cd8433.png",
+        "title": "$MAID"
+    },
+    {
+        "id": 4,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x9d47894f8becb68b9cf3428d256311affe8b068b.png",
+        "title": "$ROPE"
+    },
+    {
+        "id": 5,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0xb6ed7644c69416d67b522e20bc294a9a9b405b31.png",
+        "title": "0XBTC"
+    },
+    {
+        "id": 6,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x035df12e0f3ac6671126525f1015e47d79dfeddf.png",
+        "title": "0XMR"
+    },
+    {
+        "id": 7,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0xc86817249634ac209bc73fca1712bbd75e37407d.png",
+        "title": "$1-UP"
+    },
+    {
+        "id": 8,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$10SET"
+    },
+    {
+        "id": 9,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$BASED"
+    },
+    {
+        "id": 10,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$BASED"
+    },
+    {
+        "id": 11,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$BASED"
+    },
+    {
+        "id": 12,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$BASED"
+    },
+    {
+        "id": 13,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$BASED"
+    },
+    {
+        "id": 14,
+        "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/ethereum/0x68a118ef45063051eac49c7e647ce5ace48a68a5.png",
+        "title": "$BASED"
+    }
+]
