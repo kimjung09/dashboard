@@ -518,3 +518,33 @@
        padding:0px 32px;
    }
 }
+
+@media screen and (max-width:1200px ) {
+    .Bridge > .Bridge-title > .Bridge-title-body {
+        padding:32px 32px;
+        padding-bottom:0;
+    }
+    .Bridge > .Bridge-title > .Bridge-title-body > .title {
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Bridge > .Bridge-container > .bridge > .bridge-section > .bridge-section-container > .container-second-form > .max {
+        transition:.3s;
+        cursor:pointer;
+        border-radius: 8px;
+        align-items: center;
+   
+        background:rgba(120,79,254,.15);
+        font-size:14px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color:#784ffe;
+        padding:8px;
+        display:flex;
+        margin: 0 12px;
+        position:relative;
+        right:50px;
+   }
+}
