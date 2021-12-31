@@ -104,8 +104,7 @@
     margin:0 auto;
     box-sizing: border-box;
 }
-.settings > .settings_container > .description  > .description_container {
-}
+
 .settings > .settings_container > .description  > .description_container {
     border-top:1px solid #2c3a43;
 }
@@ -113,7 +112,7 @@
     border-top:1px solid #2c3a43;
     display:flex;
     align-items:center;
-    padding:12px 0;
+    padding:14px 0;
     font-size: 14px;
 }
 .settings > .settings_container > .description  > .description_container > .description_item > h1 {
@@ -235,4 +234,54 @@
   }
    .settings > .settings_container > .description {
    }
+}
+
+
+@media screen and (min-width:600px) {
+    .settings > .top {
+        padding:0px 32px;
+    }
+    .settings > .profile > .profile_top {
+        padding:0px 32px;
+    }
+    .settings > .profile > .profile_top > .profile_top_container {
+        padding-top:32px;
+        padding-bottom:16px;
+
+    }
+    .settings > .profile > .profile_bottom {
+        padding:0px 32px;
+    }
+    .settings > .settings_container { 
+        padding:0px 32px;
+    }
+    .settings > .settings_container > .title {
+        padding-bottom:16px;
+        padding-top:32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .settings > .settings_container {
+        flex: 1 1;
+        height:100%;
+        min-height:100%;
+    }
+    .settings > .top {
+        padding: 0px 12px;
+    }
+    .settings > .profile  > .profile_top {
+        padding: 0px 12px;
+    }
+    .settings > .profile  > .profile_top > .profile_top_container {
+        padding-bottom: 16px;
+        padding-top:16px;
+    }
+    .settings > .profile > .profile_bottom {
+        padding: 0px 12px;
+    }
+    .settings > .settings_container {
+        padding: 16px 12px;
+    }
+
 }

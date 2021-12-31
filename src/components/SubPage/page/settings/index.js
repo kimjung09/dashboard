@@ -15,7 +15,7 @@ const Settings = () => {
            <div className="profile">
                <div className="profile_top">
                    <div className="profile_top_container">
-                       sdsd
+                       Profile
                    </div>
                </div>
                 <div className="profile_bottom">
