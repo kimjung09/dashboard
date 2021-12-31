@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Arbitrum",
+        "img": "https://zapper.fi/images/networks/arbitrum-icon.png"
+        
+    },
+    {
+        "id":2,
+        "title": "Avalanche",
+        "img": "https://zapper.fi/images/networks/avalanche-icon.png"
+    },
+    {
+        "id":3,
+        "title": "BSC",
+        "img": "https://zapper.fi/images/networks/binance-smart-chain-icon.png"
+    },
+    {
+        "id":4,
+        "title": "Celo",
+        "img": "https://zapper.fi/images/networks/celo-icon.png"
+    },
+    {
+        "id":5,
+        "title": "Ethereum",
+        "img":"https://zapper.fi/images/networks/ethereum-icon.png"
+    },
+    {
+        "id":6,
+        "title": "Fantom",
+        "img":"https://zapper.fi/images/networks/fantom-icon.png"
+    },
+    {
+        "id":7,
+        "title": "Harmony One",
+        "img": "https://zapper.fi/images/networks/harmony-icon.png"
+    }
+]

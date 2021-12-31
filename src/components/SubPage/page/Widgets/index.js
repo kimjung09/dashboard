@@ -3,6 +3,7 @@ import "./style/widgets.css"
 import {FaSearch} from 'react-icons/fa'
 import itemList from "../json/widgets.json";
 import ImageList from '../json/widgets-item.json';
+import LeanList from '../json/Learn-List.json';
 
 const Widgets = () => {
    const [item, setItem] = useState(itemList);
@@ -25,22 +26,22 @@ const Widgets = () => {
                                 <button></button>
                        </div>
                        <div className="token">
-                           <h4>{item.TokenWatchlist}</h4>
+                           <h4>{itemList.TokenWatchlist}</h4>
                            <div className="form">
                                <div className="container">
-                               <h4>{item.NoToken}</h4>
-                               <p>{item.Searchfor}</p>
+                               <h4>{itemList.NoToken}</h4>
+                               <p>{itemList.Searchfor}</p>
                                </div>
                            </div>
                        </div>
                        <div className="network">
                            <div className="network_fee">
-                               <div className='network_title'>{item.Network}</div>
+                               <div className='network_title'>{itemList.Network}</div>
                                <div className="network_box_container">
                                <div className="network_box">
                                        <div className='network_title_left'>
-                                           <span className="line">{item.Standard}</span>
-                                           <span className="time">{item.min}</span>
+                                           <span className="line">{itemList.Standard}</span>
+                                           <span className="time">{itemList.min}</span>
                                        </div>
                                        <div className='network_title_right'>
                                            <span>50</span>
@@ -51,8 +52,8 @@ const Widgets = () => {
                                </div>
                                <div className="network_box">
                                        <div className='network_title_left'>
-                                           <span className="line">{item.Fast}</span>
-                                           <span className="time">{item.min}</span>
+                                           <span className="line">{itemList.Fast}</span>
+                                           <span className="time">{itemList.min}</span>
                                        </div>
                                        <div className='network_title_right'>
                                            <span>50</span>
@@ -93,40 +94,21 @@ const Widgets = () => {
                                 <h4>Zapper Learn - Recent articles</h4>
                             </div>
                             <div className="form">
-                                <div className="container">
-                                    <a href="https://learn.zapper.fi/articles/what-is-gas">
+                                {LeanList.map(item => (
+                                    <>
+                                    <div className="container">
+                                    <a href={item.address}>
                                         <div className="body">
-                                            <div className="icon">⛽️</div>
+                                            <div className="icon">{item.icon}</div>
                                             <div className="description">
-                                                <h1>What is Gas?</h1>
-                                                <p>5 min. read</p>
+                                                <h1>{item.title}</h1>
+                                                <p>{item.time}</p>
                                             </div>
                                         </div>
                                     </a>
-                                </div>
-                                <div className="container">
-                                    <a href="https://learn.zapper.fi/articles/what-is-gas">
-                                        <div className="body">
-                                            <div className="icon">⛽️</div>
-                                            <div className="description">
-                                                <h1>What is Gas?</h1>
-                                                <p>5 min. read</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className="container">
-                                    <a href="https://learn.zapper.fi/articles/what-is-gas">
-                                        <div className="body">
-                                            <div className="icon">⛽️</div>
-                                            <div className="description">
-                                                <h1>What is Gas?</h1>
-                                                <p>5 min. read</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
+                                     </div>
+                                </>
+                                 ))}
                             </div>
                         </div>
                      </div>

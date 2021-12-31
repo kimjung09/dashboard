@@ -1,0 +1,147 @@
+.exchange-modal {
+    height:100%;
+    width:100%;
+    position:fixed;
+    display:flex;
+    top:0;
+    left:0;
+    z-index:12;
+    align-items:cneter;
+    background:rgba(33,38,43,.75);
+}
+
+.exchange-modal > .modal-container {
+    width:100%;
+    max-width:475px;
+    margin:auto;
+    max-height:90vh;
+    outline:none;
+    overflow:auto;
+}
+
+.exchange-modal > .modal-container > .modal-content {
+    background:#141a1e;
+    color:#fff;
+    border-radius: 8px;
+    padding:32px;
+    height: auto;
+    position:relative;
+    box-sizing:border-box;
+}
+
+.exchange-modal > .modal-container > .modal-content > .title {
+    margin: 0 0 4px;
+    font-weight: 500;
+    font-size: 20px;
+    display:flex;
+}
+.exchange-modal > .modal-container > .modal-content > .title > h1 {
+    font-size:20px;
+    flex: 1 1;
+
+}
+.exchange-modal > .modal-container > .modal-content > .body {
+     margin-top:20px;
+
+}
+
+
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper {
+    width:100%;
+}
+
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > .table_options {
+    display:flex;
+    margin-bottom: 16px;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > .table_options > .table_filter {
+    display:flex;
+    flex-grow:1;
+    position:relative;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > .table_options > .table_filter > .flex {
+    display:flex;
+    align-items: center;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > .table_options > .table_filter > .flex > .icon {
+    color:#c7d2da;
+    margin-left:12px;
+    position:absolute;
+    top:8px;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > .table_options > .table_filter > input {
+    color:#c7d2da;
+    background:#202a30;
+    border:2px solid #202a30;
+    width:100%;
+    max-width:450px;
+    box-sizing:border-box;
+    height: 40px;
+    border-radius: 8px;
+    outline:0;
+    font-size:16px;
+    padding: 12px 16px 12px 48px;
+}
+
+/* row  */
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table {
+    min-width:70px;
+    overflow:auto;
+    border:0;
+    width:100%;
+    border-spacing: 0;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container {
+    position:relative;
+    width:100%;
+    height: 380px;
+    overflow:auto;
+    will-change: transform;
+    direction:ltr;
+}
+
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container > .scroll-container {
+    width:100%;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container > .scroll-container > tr {
+    display:flex;
+    min-width: 70px;
+    left:0px;
+    
+    top:0px;
+    width: 100px;
+    height: 48px;
+}
+
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container > .scroll-container > tr > td {
+    box-sizing: border-box;
+    flex: 60 0 auto;
+    min-width: 60px;
+    width: 60px;
+    padding:12px 0;
+    align-items:center;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container > .scroll-container > tr > td > .flex {
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container > .scroll-container > tr > td > .flex > .token-group {
+    display:flex;
+    padding-right:16px;
+    position:relative;
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container > .scroll-container > tr > td > .flex > .token-group > img {
+    width:30px;
+    height: 30px;
+    z-index:1;
+    box-shadow: 0 0 0 2px #2c3a43;
+    border:0;
+    border-radius:100%; 
+}
+.exchange-modal > .modal-container > .modal-content > .body > .table_wrapper > table > tbody > .container > .scroll-container > tr > td > .flex > h1 {
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   margin-right: 12px;
+   font-size:15px;
+}

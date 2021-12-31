@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { 
 
     AiOutlineMenuUnfold,
@@ -11,7 +11,11 @@ import {
 
 import {IoIosGitNetwork} from 'react-icons/io'
 
+
 const Menu = () => {
+ 
+
+
     return (
         <div className="dashboard-bottom">
         <div className="dashboard-bottom_container">
@@ -40,14 +44,18 @@ const Menu = () => {
                
             </div>
             <div className="dashboard-bottom_network">
-                <div className="dashboard-bottom_network_box">
+                <div className="dashboard-bottom_network_box"
+                
+                >
                     <IoIosGitNetwork />
                     <h1>Networks(9)</h1>
                     <AiOutlineDown size="10px"/>
                 </div>
+                
                 <div className="dashboard-bottom_network_toggle">
                     <AiOutlineDown size="20px"/>
                 </div>
+          
             </div>
         </div>
     </div>
