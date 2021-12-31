@@ -226,5 +226,33 @@
     .Address  > .center {
          padding:0 32px;
     }
+}
 
+
+@media screen and (min-width:600px) {
+    .Address > .title > .container {
+        padding: 0px 32px;
+
+    }
+    .Address > .center {
+        padding:0px 32px;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    .Address  > .center > .watchlist  > .watchlist_bundle {
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap:16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Address > .title {
+        padding-left:12px;
+    }
+    .Address > .center {
+        padding:0px 12px;
+    }
 }
