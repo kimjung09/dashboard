@@ -20,6 +20,7 @@ import {GiCancel} from 'react-icons/gi'
 import Valuts from './components/SubPage/page/Valuts';
 import Search from './components/test';
 import Bridge from './components/SubPage/page/Bridge';
+import Save from './components/SubPage/page/Save';
 
 const App = (props) => {
   const [sidebar, setSidebar] = useState(false);
@@ -77,11 +78,10 @@ const App = (props) => {
   
             <Route exact path="/exchange"  element={<ExChange /> } /> 
             <Route exact path="/pool"  element={<Pool /> } /> 
-            <Route exact path="/save"  element={<Pool /> } /> 
+            <Route exact path="/save"  element={<Save /> } /> 
             <Route exact path="/farm"  element={<Pool /> } /> 
             <Route exact path="/valuts"  element={<Valuts /> } /> 
             <Route exact path="/revoke"  element={<Allow /> } /> 
-            <Route exact path="/save"  element={<Pool /> } /> 
             <Route exact path="/address"  element={<Address /> } /> 
             <Route exact path="/settings"  element={<Settings /> } /> 
             <Route exact path="/bridge"  element={<Bridge /> } /> 
