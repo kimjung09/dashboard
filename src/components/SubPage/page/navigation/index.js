@@ -8,6 +8,7 @@ import { Link, NavLink } from 'react-router-dom';
 import "./style/navi.css"
 import DarkMode from './Dark/DarkMode';
 import { useDetectOutsideClick } from './useDetect';
+import Language from './Country';
 
 
 
@@ -252,12 +253,11 @@ const Navigation = ({props,modalClose}) => {
                        </div>
                            <span>Allowances</span>
                        </NavLink>
-
                    </div>
                 </div>
                     
                 <div className="flex-max"></div>
-                <NavLink to="settings" className="sidebar_menu_icon">
+                <NavLink to="/settings" className="sidebar_menu_icon">
                     <div className="flex">
                         <AiFillSetting className="icon"/>
                     </div>
@@ -272,7 +272,10 @@ const Navigation = ({props,modalClose}) => {
                          </div>
                      </div>
                  </div>
-                 <DarkMode />
+                 <div className="bottom">
+                     <Language/>
+                    <DarkMode />
+                  </div>
             </div>
             </div>
         </nav>

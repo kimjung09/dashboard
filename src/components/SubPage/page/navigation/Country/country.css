@@ -1,0 +1,102 @@
+.country-wrapper-side {
+    position:relative;
+   z-index:1;
+    
+}
+
+
+.country-wrapper-side > .wrapper {
+   height:30px;
+   max-width: 200px;
+   background:#1a2227;
+   border-radius:8px;
+   font-size:14px;
+   font-weight: 500;
+   padding-right:8px;
+   padding-left: 8px;
+   padding-top: 0px;
+   padding-bottom:0;
+
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   z-index:1;
+}
+
+.country-wrapper-side > .wrapper > img {
+   width:20px;
+   height: 20px;
+   margin-right: 8px;
+   border-radius: 8px;
+}
+
+.country-wrapper-side > .menu {
+     display:flex;
+     z-index:1;
+     flex-flow:column;
+     top:20px;
+}
+
+.country-wrapper-side > .menu.inactive {
+   display:none;
+   z-index: -999;
+   position:fixed;
+}
+.country-wrapper-side > .menu.active {
+  position:fixed;
+  inset: auto auto auto auto;
+  bottom:60px;
+  z-index:1;
+  
+}
+
+.country-wrapper-side > .menu.active > .menu_row {
+    width: calc(100% + 40px);
+    background:#1a2227;
+    box-shadow: 0 2px 8px rgba(245,251,255,0.1);
+
+    
+    
+}
+
+.country-wrapper-side > .menu.active > .menu_row > .column {
+    display:flex;
+    flex-direction: column;
+}
+
+.country-wrapper-side > .menu.active > .menu_row > .column > .dropdown__list {
+    display:flex;
+    align-items: center;
+    padding:12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.country-wrapper-side > .menu.active > .menu_row > .column > .dropdown__list >  img {
+   width:20px;
+   height:20px;
+   box-shadow:  0 0 2px #2c3a43;
+   border-radius: 100%;
+   margin-right: 15px;
+   margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+   .country-wrapper-side > .wrapper {
+       margin-bottom: 20px;
+    }
+    .country-wrapper-side > .wrapper > p {
+        display:none;
+    }
+    .country-wrapper-side > .wrapper  {
+        display:block;
+    }
+    .country-wrapper-side > .wrapper > img {
+        padding-top:5px;
+    }
+    .country-wrapper-side > .menu.active {
+      bottom:120px;
+    }
+}

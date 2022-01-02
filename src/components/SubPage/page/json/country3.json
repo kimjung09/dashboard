@@ -1,0 +1,18 @@
+[
+    
+    {
+        "id": "BRL",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "SEK",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "HKD",
+        "img":"https://zapper.fi/images/currencies/RUB.svg"
+    }, 
+    {
+        "id": "ETH" 
+    }
+]

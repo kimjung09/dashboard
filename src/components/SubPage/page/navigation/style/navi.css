@@ -581,6 +581,22 @@
     margin-left: 4px;
     color:#fff;
 }
+.sidebar_wrapper > .hidden > .connected > .bottom {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    max-width:207px;
+    width:100%;
+}
+
+@media screen and (max-width:1200px) {
+.sidebar_wrapper > .hidden > .connected > .bottom {
+       display:block;
+       padding-top:12px;
+  }
+}
+
 
 @media screen and (min-width:1200px) {
     .sidebar_wrapper {
@@ -591,6 +607,12 @@
       width:12rem;
 
     }
+    .sidebar_wrapper > .hidden > .connected > .bottom {
+       padding-left:0;
+       padding-right: 0;
+       flex-direction: row;
+       gap:0;
+    } 
 }
 
 @media only screen and (max-width:1200px) and (min-width:400px) {

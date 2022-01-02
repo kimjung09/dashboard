@@ -1,0 +1,18 @@
+[
+    
+    {
+        "id": "MXN",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "CHF",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "KRW",
+        "img":"https://zapper.fi/images/currencies/RUB.svg"
+    }, 
+    {
+        "id": "TRY" 
+    }
+]

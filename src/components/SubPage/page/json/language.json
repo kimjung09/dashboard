@@ -1,0 +1,43 @@
+[
+    {
+        "id": "en",
+        "title": "english",
+        "item_title": "Settings"
+    },
+    {
+        "id": "fr",
+        "title": "Francais"
+    },
+    {
+        "id": "es",
+        "title": "Español"
+    },
+    {
+        "id": "pt",
+        "title": "Português"
+    },
+    {
+        "id": "ru",
+        "title":"中文"
+    },
+    {
+        "id": "zh",
+        "title":"Deutsch"
+    },
+    {
+        "id": "dh",
+        "title":"Dutch"
+    },
+    {
+        "id": "it",
+        "title":"Italian"
+    },
+    {
+        "id": "el",
+        "title": "ελληνικά"
+    },
+    {
+        "id": "uk",
+        "title":"Українська"
+    }
+]

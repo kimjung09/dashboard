@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Country from './Country';
 import DarkMode from './Dark/DarkMode';
 import Language from './Language';
 import "./style/settings.css"
 import Switch from './Switch';
+import LanguageList from '../json/language.json'
 
-const Settings = () => {
+const Settings = (id) => {
+   const [item, setItem] = useState(LanguageList);
+
+   
    return (
        <div className="settings">
            <div className="top">
                <div className='top_title'>
                    <div className='top_container'>
-                       Settings
+                       {LanguageList.id}
                    </div>
                </div>
            </div>

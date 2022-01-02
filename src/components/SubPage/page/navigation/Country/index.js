@@ -21,7 +21,7 @@ const Country = ({props}) => {
 
 
     return (
-        <div className="country-wrapper" props={props}>
+        <div className="country-wrapper-side" props={props}>
             <div className="wrapper" onClick={onClick}>
                  <img src={process.env.PUBLIC_URL + "/images/USD.png"} />
                  <p>USD</p>

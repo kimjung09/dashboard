@@ -1,0 +1,18 @@
+[
+    
+    {
+        "id": "USD",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "EUR",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "CNY",
+        "img":"https://zapper.fi/images/currencies/RUB.svg"
+    }, 
+    {
+        "id": "CAD" 
+    }
+]

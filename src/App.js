@@ -84,12 +84,12 @@ const App = (props) => {
             <Route exact path="/revoke"  element={<Allow /> } /> 
             <Route exact path="/address"  element={<Address /> } /> 
             <Route exact path="/settings"  element={<Settings /> } /> 
+            <Route exact path="/settings/:id" element={<Settings/>}/>
             <Route exact path="/bridge"  element={<Bridge /> } /> 
             <Route exact path="/quests" element={<Quests/>}/>
             <Route exact path="/rewards" element={<Rewords/>} />
             <Route exact path="/token" element={<Search/>}/>
             <Route exact path="/token/:id" element={<Rewords/>}/>
-   
         </Routes>
            <div className="hidden-top">
                   <Routes></Routes>

@@ -1,0 +1,18 @@
+[
+    
+    {
+        "id": "AUD",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "NOK",
+        "img": "/images/lang/AUD.png"
+    },
+    {
+        "id": "SGD",
+        "img":"https://zapper.fi/images/currencies/RUB.svg"
+    }, 
+    {
+        "id": "BTC" 
+    }
+]
