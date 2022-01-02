@@ -18,7 +18,7 @@ import Widgets from './components/SubPage/page/Widgets';
 import {AiFillWarning} from 'react-icons/ai'
 import {GiCancel} from 'react-icons/gi'
 import Valuts from './components/SubPage/page/Valuts';
-import Search from './components/test';
+import Search from './components/search';
 import Bridge from './components/SubPage/page/Bridge';
 import Save from './components/SubPage/page/Save';
 
@@ -46,8 +46,8 @@ const App = (props) => {
          <div className="Container">
            {/* Navigation */}
            <Navigation onClick={(props) => modalClose(true)}/>    
-         {/* BodyComponent */}
-         <div className="Body">
+          {/* BodyComponent */}
+            <div className="Body">
            <div className="app-header">
              <div className="app-header-hidden">
                <div className="app_container">
@@ -87,10 +87,10 @@ const App = (props) => {
             <Route exact path="/bridge"  element={<Bridge /> } /> 
             <Route exact path="/quests" element={<Quests/>}/>
             <Route exact path="/rewards" element={<Rewords/>} />
-            <Route exact path="/search" element={<Search/>} />
-
-           </Routes>
-       
+            <Route exact path="/token" element={<Search/>}/>
+            <Route exact path="/token/:id" element={<Rewords/>}/>
+   
+        </Routes>
            <div className="hidden-top">
                   <Routes></Routes>
               
@@ -111,22 +111,16 @@ const App = (props) => {
                  </div>
                 </div>  
              </div>
-
-              
            </div>
            <div className="flex-max"></div>
-            
-
             <div className="bottom">
             <Footer /> 
             </div>
           </div>
            </div>
            {/* Widgets Compoent */}
-          <Widgets />
-
-          
  
+          <Widgets />
            </div>
       </>
   );

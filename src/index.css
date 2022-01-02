@@ -13,7 +13,7 @@
   --background-mid-color:rgba(120,79,254,0.15);
   --border-color:#dfe8f9;
   --text-color:#c7d2da;
-
+  --success: #12BC00;
 }
 
 [data-theme="dark"] {
@@ -38,6 +38,11 @@ body{
   line-height: 1.3975;
   overflow-x:hidden;
 
+}
+
+
+ul, li {
+  list-style: none;
 }
 
 .bg-color  {

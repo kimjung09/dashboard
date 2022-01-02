@@ -1,12 +1,11 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import "../style/Rewards.css"
 import rewardList from '../../json/rewards-items.json';
 import {ImHammer} from 'react-icons/im';
 import Modal from "./Modal"
 
-const RewardsBody = (props) => {
-   const [item, setItem] = useState(rewardList);
-   
+const RewardsBody = (props, match) => {
+   const [item, setItem] = useState([]);
    const [modalOpen, setModalOpen] = useState(false);
    const modalClose = (e) => {
        setModalOpen(!modalOpen);
@@ -15,10 +14,15 @@ const RewardsBody = (props) => {
        if (e.target === e.currentTarget) {
            modalClose();
        }
-   }
+    }
+
+    
+    useEffect(() => {
+        setItem(rewardList);
+    })
 
 
-   
+
 
     return (
         <div className="rewards">
@@ -73,7 +77,11 @@ const RewardsBody = (props) => {
                 </div>
                     </>
                 ))}
-            {modalOpen && <Modal modalClose={modalClose} props={props}></Modal>}
+            {modalOpen && <Modal modalClose={modalClose} props={props}
+                           match={match}
+                        
+                           
+            ></Modal>}
             </div>
         </div>
              

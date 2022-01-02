@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "title":"Zapper Terminator12321",
         "rewrads_title":"GEN 2-1",
         "rewrads_supply": "SUPPLY:2535",
         "rewards_description": "Zaphrodite is the daughter of Zapeus, and therefore heir to great power in the Zapperverse.",
@@ -11,6 +12,7 @@
     {
         "id": 2,
         "rewrads_title":"GEN 2-1",
+        "title":"Zapper Terminator",
         "rewrads_supply": "SUPPLY:2535",
         "rewards_description": "Zaphrodite is the daughter of Zapeus, and therefore heir to great power in the Zapperverse.",
         "images":"https://storage.googleapis.com/zapper-fi-assets/rewards/preview/7.png",

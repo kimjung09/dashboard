@@ -1,0 +1,20 @@
+{
+    "id":1,
+    "uptitle": "Wrapperd Fantom (wFTM)",
+    "headertitle": "Fantom",
+    "img": "https://storage.googleapis.com/zapper-fi-assets/tokens/fantom/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83.png",
+    "subtitle": "Wrapper Fantom (wFTM)",
+    "doller":"$2.546",
+    "percent": "+8.43%",
+    "hours": "1H",
+    "day":"1D",
+    "week":"1W",
+    "month": "1M",
+    "years": "1Y",
+
+    "markget": "Market cap",
+    "supply": "Circulating supply",
+    "24hours": "24 hours volumne",
+    "All-time-high": "All-time high",
+    "All-time-low": "All-time low"
+}

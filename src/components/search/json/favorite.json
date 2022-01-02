@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "link":"https://www.coingecko.com/en/coins/fantom",
+        "img":"https://zapper.fi/images/other/coingecko.png"
+    },
+    {
+        "id":2,
+        "link":"https://ftmscan.com/token/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+        "img":"https://zapper.fi/images/other/coingecko.png"
+    },
+    {
+        "id":3,
+        "link": "https://ftmscan.com/token/0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+        "img": "https://zapper.fi/images/other/ftmscan.png"
+    }
+]

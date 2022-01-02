@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style/widgets.css"
 import {FaSearch} from 'react-icons/fa'
 import itemList from "../json/widgets.json";
 import ImageList from '../json/widgets-item.json';
 import LeanList from '../json/Learn-List.json';
 
-const Widgets = () => {
+const Widgets = ({history,location}) => {
    const [item, setItem] = useState(itemList);
+
+
+   const onKeyPress = (e) => {
+       if(window.event.keyCode === 13) {
+           history.push("/search");
+       }
+   }
 
     return (
         
@@ -18,8 +25,13 @@ const Widgets = () => {
                            <div className="icon"></div>
                            <div className="control">
                                <FaSearch className="icon" />
-                               <input type="text" placeholder="Search by account, token, ENS..." />
-                           </div>
+
+                               <input type="search" 
+                               placeholder="Search by account, token, ENS..." 
+                                onKeyPress={onKeyPress}
+                                
+                               />
+                               </div>
                        </div>
                        <div className="watchlist">
                                 <h1>{itemList.title}</h1>

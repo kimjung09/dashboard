@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import "../style/Modal.css"
-// import {useAsync} from 'react-async-hook';
-// import rewardList from '../../json/rewards-items.json';
+import { useParams }from 'react-router-dom';
+import rewardList from '../../json/rewards-items.json';
 
-const Modal = ({modalClose,props,match}) => {
+const Modal = ({modalClose,props, title, rewards_title}) => {
 
     useEffect(() => {
        document.body.style.cssText = `
@@ -15,6 +15,10 @@ const Modal = ({modalClose,props,match}) => {
               document.body.style.cssText = '';
           }
     })
+
+   
+   const item = useParams(rewardList);
+
 
     return (
         <>
@@ -39,8 +43,12 @@ const Modal = ({modalClose,props,match}) => {
                         </div>
                         </div>
                         <div className="modal_header_media">
-                            <video width="100%" autoplay loop poster='dsd'>
-                                <source src="https://storage.googleapis.com/zapper-fi-assets/rewards/webm/7.webm" />
+                            <video width="100%" autoplay="" loop="" 
+                              poster="https://storage.googleapis.com/zapper-fi-assets/rewards/preview/7.png"
+                            >                            
+                                <source src="https://storage.googleapis.com/zapper-fi-assets/rewards/webm/7.webm" 
+                                 type="video/webm"
+                                />
                             </video>
                         </div>
                         <div className="modal_header_text">
