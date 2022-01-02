@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import { FaGasPump } from 'react-icons/fa';
+import { FaGasPump, FaSearch } from 'react-icons/fa';
 import {Routes, Route} from "react-router-dom";
 import './App.css';
 import MainPage from './components/MainPage';
@@ -111,6 +111,25 @@ const App = (props) => {
 
            <div className="wrapper">
              <div className="top">
+             <div className="search">
+               <div className="search-container">
+                  <FaSearch className="icon"/>
+                  <div className="container">
+                    <div className="body">
+               
+                      <div className="css">
+                         <div className="css_input">
+                           <input type="text" aria-autocomplete='list'
+                            placeholder="Search by account, token, ENS..." 
+                           />
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+
+               </div>
+             </div>
+
            <Routes>
             <Route exact path="/dashboard" element={<Dashboard/>} />
             <Route exact path="/dashboard/nft" element={<Dashboard/>} />

@@ -744,8 +744,5 @@
    .sidebar_wrapper > .side {
        display:block;
    }
-   .sidebar_wrapper > .hidden > .connected > .dropdown {
-       padding:0;
-       border:!px solid red;
-   }
+
 }

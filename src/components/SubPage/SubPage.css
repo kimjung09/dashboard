@@ -24,7 +24,7 @@
     outline:none;
     display:block;
     width:100%;
-    
+
     top: 0;
     background:rgba(33,38,43,.75);
     position:absolute; 
@@ -106,7 +106,111 @@
 
 }
 
+.Container > .Body > .wrapper > .top > .search {
+    position:absolute;
+    right:36px;
+    top:10px;
+    align-items: center;
+    justify-content: flex-end;
+    flex:  1 1;
+    margin-left: 16px;
 
+}
+.Container > .Body > .wrapper > .top > .search > .search-container {
+    width:100%;
+    max-width:400px;
+    padding:8px 0px;
+    flex: 1 1;
+    position:relative;
+
+}
+.Container > .Body > .wrapper > .top > .search > .search-container > .icon {
+    position:absolute;
+    color:#c7d2da;
+    left:0;
+    margin-left: 12px;
+    top:8px;
+    z-index: 1;
+    transition: .3s;;
+}
+
+.Container > .Body > .wrapper > .top > .search > .search-container > .container {
+    position: relative;
+    box-sizing: border-box;
+    background:#202a30;
+    box-shadow: none;
+    top:-8px;
+    height: 40px;
+    border-radius: 8px;
+    cursor:text;
+    align-items: center;
+    display:flex;
+    flex-wrap:wrap;
+    min-height: 38px;
+    justify-content: space-between;
+    box-sizing:border-box;
+    position:relative;
+    outline:none;
+    width:100%;
+    width:358px;
+
+}
+.Container > .Body > .wrapper > .top > .search > .search-container > .container > .body {
+      flex-wrap:nowrap;
+      flex-shrink: 0;
+      margin-left: 48px;
+      margin-right: 12px;
+      padding-left: 0;
+      align-items: center;
+      display:flex;
+      flex: 1;
+      padding: 2px 8px;
+      position:relative;
+      overflow:hidden;
+      box-sizing:border-box;
+}
+
+.Container > .Body > .wrapper > .top > .search > .search-container > .container > .body > .placeholder {
+    white-space: nowrap;
+    color:#c7d2da;
+    margin-left: 2px;
+    margin-right: 2px;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    box-sizing:border-box;
+    pointer-events: none;
+    -webkit-user-select: none;
+    
+}
+.Container > .Body > .wrapper > .top > .search > .search-container > .container > .body > .css {
+    margin: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    visibility: visible;
+    color:hsl(0,0%,20%);
+    flex: 1 1 auto;
+    box-sizing:border-box;
+    width:100%;
+}
+
+.Container > .Body > .wrapper > .top > .search > .search-container > .container > .body > .css > .css_input {
+    display:inline-block;
+    color:#fff;
+    width:100%;
+    
+}
+
+.Container > .Body > .wrapper > .top > .search > .search-container > .container > .body > .css > .css_input > input {
+      width:100%;
+      box-sizing:content-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0px center;
+      border:none;
+      opacity: 1;
+      outline: currentColor none 0px;
+      padding:0px;
+      color:#fff;
+}
 .Container > .Body > .wrapper > .top > .hidden-top {
    width:100%;
    padding-bottom:32px;
@@ -332,4 +436,22 @@
         font-size: 10px;
         line-height: 10px;
     }
+    .Container > .Body > .wrapper > .top > .search {
+        visibility: visible;
+        display:none;
+     }
+}
+
+@media screen and (min-width: 600px) {
+.Container > .Body > .wrapper > .top > .search {
+     visibility: visible;
+     display:flex;
+  }
+}
+
+@media screen and (min-width:1024px) {
+    .Container > .Body > .wrapper > .top > .search {
+        visibility: visible;
+        display:none;
+     }
 }
