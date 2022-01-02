@@ -1,5 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import Country from './Country';
+import DarkMode from './Dark/DarkMode';
+import Language from './Language';
 import "./style/settings.css"
+import Switch from './Switch';
 
 const Settings = () => {
    return (
@@ -37,34 +42,40 @@ const Settings = () => {
                        <div className="description_item">
                            <h1>Theme</h1>
                            <div className="description_item_right">
-                            dsd   
+                             <DarkMode/>
                             </div>
                        </div>
                        <div className="description_item">
                            <h1>Base Currency</h1>
                            <div className="description_item_right">
-                               
+                               <Country/>
                            </div>
                        </div>
                        <div className="description_item">
                            <h1>Langauge</h1>
                            <div className="description_item_right">
-                               
-                               </div>
+                               <Language/>   
+                            </div>
                        </div>
                        <div className="description_item">
                            <h1>Include NFTs in totals View</h1>
                            <div className="description_item_right">
+                              <Switch/>
                            </div>
                        </div>
                        <div className="description_item">
-                           <h1>Allowances</h1>
+                            <h1>Grid View</h1>
+
                            <div className="description_item_right">
+                              <Switch/>    
                            </div>
                        </div>
                        <div className="description_item">
-                           <h1>Grid View</h1>
-                           <div className="description_item_right">
+                        <h1>Allowances</h1>
+                            <div className="description_item_right">
+                               <NavLink className="link" to="/revoke">
+                                   Manage
+                               </NavLink>
                            </div>
                        </div>
                        <div className="description_item">

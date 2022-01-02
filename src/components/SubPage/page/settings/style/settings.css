@@ -126,7 +126,27 @@
     flex-basis:auto;
     flex-grow: 1;
     justify-content: flex-end;
+    
 }
+.settings > .settings_container > .description  > .description_container > .description_item > .description_item_right > .link {
+   background:#202a30;
+   color:#c7d2da;
+
+   font-size:14px;
+   height: auto;
+   line-height: normal;
+   padding: 4px 12px;
+   border-radius: 8px;
+   outline: none;
+   font-weight: 500;
+   transition:.3s;
+   position:relative;
+   display:flex;
+   align-items: center;
+}
+
+
+
 .settings > .settings_container > .description  > .description_container  >.description_group {
     display:flex;
     align-items: center;
@@ -283,5 +303,5 @@
     .settings > .settings_container {
         padding: 16px 12px;
     }
-
+    
 }

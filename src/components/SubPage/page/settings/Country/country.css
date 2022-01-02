@@ -1,0 +1,29 @@
+.country-wrapper {
+    position:relative;
+
+}
+
+
+.country-wrapper > .wrapper {
+   height:30px;
+   background:#1a2227;
+   border:2px solid #2c3a43;
+   color:#fff;
+   display:flex;
+   align-items: center;
+   max-width:200px;
+   padding: 0 8px;
+   transition:.3s;
+   border-radius: 8px;
+   font-weight: 500;
+   cursor:pointer;
+   font-size:14px;
+   margin-left: 8px;
+}
+
+.country-wrapper > .wrapper > img {
+   width:20px;
+   height: 20px;
+   margin-right: 8px;
+   border-radius: 8px;
+}

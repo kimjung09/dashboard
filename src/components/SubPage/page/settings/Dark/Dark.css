@@ -1,0 +1,85 @@
+.setting-DarkMode {
+    display:flex;
+    width:fit-content;
+    position:relative;
+    align-items: center;
+    text-align: left;
+    opacity: 1;
+    border-radius:17px;
+}
+
+.setting-DarkMode span {
+    font-size: 18px;
+    margin: 0 4px;
+    position:absolute;
+}
+
+.setting-DarkMode > .toggle-theme {
+    position: relative;
+    display:inline-block;
+    height: 34px;
+    width:60px;
+
+}
+
+.setting-DarkMode > .toggle-theme > input {
+    display:none;
+}
+
+
+.slider {
+    background-color:#ccc;
+    position:absolute;
+    cursor:pointer;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    transition: 0.2s;
+
+}
+
+.slide:before {
+    background-color: #ffff;
+    bottom:4px;
+    content:"";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width:26px;
+    z-index:1;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}
+
+input:checked + .slider {
+    background-color: cornflowerblue;
+}
+
+.slider.round {
+    border-radius:34px;
+}
+.slider.round:before {
+    border-radius:50%;
+}
+
+@media screen and (max-width:600px) {
+    .setting-DarkMode {
+        display:block;
+    }
+    .setting-DarkMode span {
+        font-size:14px;
+        margin: 0 4px;
+    }
+    
+
+    .setting-DarkMode > .toggle-theme {
+        position:relative;
+        display:inline-block;
+        height:34px;
+        width:60px;
+    }
+}
