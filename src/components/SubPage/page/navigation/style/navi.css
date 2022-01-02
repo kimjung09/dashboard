@@ -594,6 +594,7 @@
 .sidebar_wrapper > .hidden > .connected > .bottom {
        display:block;
        padding-top:12px;
+       margin-bottom: 20px;
   }
 }
 
@@ -743,5 +744,8 @@
    .sidebar_wrapper > .side {
        display:block;
    }
-
+   .sidebar_wrapper > .hidden > .connected > .dropdown {
+       padding:0;
+       border:!px solid red;
+   }
 }

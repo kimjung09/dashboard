@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { FaGasPump } from 'react-icons/fa';
 import {Routes, Route} from "react-router-dom";
 import './App.css';
@@ -21,10 +21,41 @@ import Valuts from './components/SubPage/page/Valuts';
 import Search from './components/search';
 import Bridge from './components/SubPage/page/Bridge';
 import Save from './components/SubPage/page/Save';
+import { useDetectOutsideClick } from './components/SubPage/page/navigation/useDetect';
+import MobileNav from './components/SubPage/page/navigation/mobile-navigation';
 
 const App = (props) => {
   const [sidebar, setSidebar] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [isOpen, setMenu] = useState(false);
+  const [button, setButton] = useState(true);
+  const [click, setClick] = useState(false);
+
+
+
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth < 600) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  }
+
+  useEffect(() => {
+    setButton();
+  })
+
+  const toggleMenu = () => {
+    setMenu(isOpen => !isOpen);
+  }
+
+  window.addEventListener('resize', setButton);
+
+  const dropdownRef = useRef(null);
+  const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
+  const onClick = () => setIsActive(!isActive);
 
   const modalClose = (e) => {
       setModalOpen(!modalOpen);
@@ -33,6 +64,7 @@ const App = (props) => {
           modalClose();
       }
   }
+
 
   
   console.log(process.env.REACT_APP_MODE);
@@ -48,11 +80,19 @@ const App = (props) => {
            <Navigation onClick={(props) => modalClose(true)}/>    
           {/* BodyComponent */}
             <div className="Body">
-           <div className="app-header">
+              <nav 
+                 ref={dropdownRef}
+                  className={`app ${isActive ? "active" : "isactive"}`} 
+             >
+               <div className="app-content-open">
+                 <MobileNav  />
+               </div>
+            </nav>
+            <div className="app-header" props={props}>
              <div className="app-header-hidden">
                <div className="app_container">
-                        <div className="blockie_left">
-                          <div className="blockie" onClick={(props) => modalClose(true)}></div>
+                        <div className="blockie_left" onClick={onClick}>
+                          <div className="blockie"></div>
                         </div>
                         <div className="blockie_center">
                             <img src={process.env.PUBLIC_URL + "/images/zapper.png"} />

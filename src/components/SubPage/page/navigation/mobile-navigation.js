@@ -5,14 +5,14 @@ import { BiExit } from 'react-icons/bi';
 import { HiOutlineSwitchHorizontal} from 'react-icons/hi';
 import { FaAddressBook, FaAngleDoubleDown, FaBalanceScaleRight, FaBook, FaEdit, FaExchangeAlt, FaHome, FaMicrophone, FaPoll, FaRegMap, FaSave, FaVials } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
-import "./style/navi.css"
+import "./style/mobile-navi.css"
 import DarkMode from './Dark/DarkMode';
 import { useDetectOutsideClick } from './useDetect';
 import Language from './Country';
 
 
 
-const Navigation = ({props,modalClose}) => {
+const MobileNav = ({props,modalClose}) => {
      const [isOpen, setMenu] = useState(false);
      const [button, setButton] = useState(true);
      const [click, setClick] = useState(false);
@@ -49,9 +49,8 @@ const Navigation = ({props,modalClose}) => {
  
     return (
         <>
-        <nav className="sidebar_wrapper" props={props}>
-        
-
+        <nav className="mobile_sidebar_wrapper" props={props}>
+    
             <div className="hidden" >
             <nav
                ref={dropdownRef}
@@ -102,8 +101,6 @@ const Navigation = ({props,modalClose}) => {
                              </a>
                          </div>
                  </nav>
-
-
                 <div className="brand">
                     <NavLink to="/dashboard" className="img">
                    <div className="logo">
@@ -115,15 +112,13 @@ const Navigation = ({props,modalClose}) => {
                 <div className="connected">
                     <div className="account" onClick={onClick}>
                         <div className="body">
-                            <div className="blockie"  >
+                            <div className="blockie">
                                 <div className='edit'>
                                 <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 24 24" height="1.2rem" width="1.2rem" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M7.243 18H3v-4.243L14.435 2.322a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L7.243 18zM3 20h18v2H3v-2z"></path></g></svg>
                                 </div>
                                 <span></span>
                                 <canvas></canvas>
                             </div>
-           
-
                             <div className="flex-max">
                                 <div className="title">
                                  <span>
@@ -148,7 +143,6 @@ const Navigation = ({props,modalClose}) => {
                         </div>
                      
                     </div>
-          
                 <div className="gamification">
                     <NavLink className="visible" to="/quests">
                         <button>
@@ -283,4 +277,4 @@ const Navigation = ({props,modalClose}) => {
     )
 }
 
-export default Navigation;
+export default MobileNav;

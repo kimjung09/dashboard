@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDetectOutsideClick } from '../../navigation/useDetect';
 import "./country.css"
 import CountryList from '../../json/country.json';
@@ -12,11 +12,36 @@ import CountryList4 from '../../json/country4.json';
 
 const Country = ({props}) => {
     const [isOpen, setMenu] = useState(false);
+    const [button, setButton] = useState(true);
     const [click, setClick] = useState(false);
 
-    const dropdonwRef = useRef(null);
-    const [isActive, setIsActive] = useDetectOutsideClick(dropdonwRef, false);
-    const onClick = () => setIsActive(!isActive);
+  
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const closeMobileMenu = () => setClick(false);
+
+    const showButton = () => {
+        if (window.innerWidth < 600) {
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+    }
+
+      useEffect(() => {
+          setButton();
+      }, [])
+
+      const toggleMenu = () => {
+          setMenu(isOpen => !isOpen);
+      }
+
+      window.addEventListener('resize', showButton);
+
+      
+      const dropdownRef = useRef(null);
+      const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
+      const onClick = () => setIsActive(!isActive);
 
 
 
@@ -29,7 +54,7 @@ const Country = ({props}) => {
                  </div>
             </div>
             <nav 
-              ref={dropdonwRef}
+              ref={dropdownRef}
               className={`menu ${isActive ? "active" : "inactive"}`
             }>
                 <div className="menu_row">

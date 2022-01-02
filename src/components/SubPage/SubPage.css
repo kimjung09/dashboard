@@ -8,6 +8,7 @@
     overflow:hidden;
     position:relative;
     /* z-index 금지 */
+
 }
 
 .Container > .Body {
@@ -15,7 +16,64 @@
     flex: 1 1;
     flex-direction:column;
 }
+.Container > .Body > .app.isactive {
+    display:none;
+}
+.Container > .Body > .app.active {
+    height: 100%;
+    outline:none;
+    display:block;
+    width:100%;
+    
+    top: 0;
+    background:rgba(33,38,43,.75);
+    position:absolute; 
 
+}
+@media screen and (min-width:600px) {
+     .Container > .Body > .app.active {
+         display:none;
+     }
+}
+
+.Container >  .app.active > .app-content-open {
+    transform: translateX(0);
+    height: 100%;
+    outline:none;
+    width:240px;
+    transition: transform .25s ease-in, -webkit-transform .25 ease-in-out;
+    
+}
+
+.Container >  .app.active > .app-content-open > .sidebar {
+    background:#141a1e;
+    border-right: 1px solid #2c3a43;
+    display:flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 207px;
+    min-height: 100%;
+    z-index: 10;
+    box-sizing:border-box;
+}
+.Container > .Body > .app.active > .app-content-open > .sidebar > .sidebar_account {
+    z-index: 1;
+    flex: 1 1;
+    display:flex;
+}
+
+
+@media screen and (max-width:600px) {
+.Container > .Body > .app.active > .app-content-open > .sidebar {
+     overflow-y: auto;
+}
+}
+
+.Container > .Body > .app.isactive {
+
+    display:none;
+     
+}
 
 .Container > .Body > .app-header {
     border-bottom: 1px solid #2c3a43;
